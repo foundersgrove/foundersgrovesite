@@ -41,3 +41,60 @@ body {
 	background: var(--background);
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+.wrapper {
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	perspective: 10px;
+}
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	transform-style: preserve-3d;
+	z-index: -1;
+}
+
+.back,
+.fore {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.back {
+	scale: 2;
+	transform: translateZ(-10px) scale();
+	animation: back-zoom linear;
+	animation-timeline: scroll(y);
+}
+
+.fore {
+	left: 100;
+	transform: translateZ(-5px) scale(-1 -1);
+}
+
+@keyframes back-zoom {
+	to {
+		scale: 4.5 4;
+	}
+}
+
+.title {
+	font-size: 4rem;
+	color: var(--foreground);
+	text-shadow: 0 0 5px var(--background);
+}
+
+section {
+	font-size: 1rem;
+	padding: 1rem;
+	background-color: #333;
+	color: white;
+}
