@@ -18,8 +18,8 @@ export default function Home() {
 						alt="Redwood Tree Single"
 						className="fore"
 					/>
-					<div className="font-arial bg-background/80 rounded-2xl p-20 size-fit backdrop-filter backdrop-blur-lg shadow-2xl text-center">
-						<h1 className="title text-center font-arial font-semibold">
+					<div className="font-arial text-background bg-foreground/20 rounded-2xl p-20 size-fit backdrop-filter backdrop-blur-lg shadow-2xl text-center">
+						<h1 className=" text-3xl text-center font-arial font-semibold">
 							Founders Grove
 						</h1>
 						<p>Lets Bring Something to Life</p>
