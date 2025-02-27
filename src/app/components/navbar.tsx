@@ -60,7 +60,7 @@ export default function NavBar({}) {
 					</a>
 				</div>
 				<div className="navbar-center hidden lg:flex">
-					<ul className="menu menu-horizontal px-1 text-background">
+					<ul className="menu menu-horizontal px-1 text-background text-l">
 						<li>
 							<a href="/">Home</a>
 						</li>
