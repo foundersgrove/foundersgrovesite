@@ -18,15 +18,15 @@ export default function Home() {
 						alt="Redwood Tree Single"
 						className="fore"
 					/>
-					<div className="font-arial text-background bg-foreground/20 p-20 rounded-xl max-w-5xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black transition-all duration-300 text-center z-20">
-						<h1 className=" text-3xl text-center font-arial font-semibold">
+					<div className="font-arial text-background bg-foreground/20 space-y-1 p-12 sm:p-20 md:p-28 rounded-xl max-w-5xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black transition-all duration-300 text-center z-20">
+						<h1 className=" md:text-4xl text-3xl text-center font-arial font-semibold">
 							Founders Grove
 						</h1>
 						<p>Lets Bring Something to Life</p>
 					</div>
 				</header>
 				<div className="space-y-24 mx-4">
-					<div className="homecard space-y-5 font-arial max-w-3xl mx-auto text-background bg-foreground/20 rounded-xl p-12 backdrop-filter shadow-xl shadow-black/50 hover:shadow-black transition-all duration-300 backdrop-blur-lg text-center">
+					<div className="homecard space-y-5 font-arial max-w-2xl mx-auto text-background bg-foreground/20 rounded-xl p-10 backdrop-filter shadow-xl shadow-black/50 hover:shadow-black transition-all duration-300 backdrop-blur-lg text-center">
 						<h2 className=" text-2xl text-center font-arial font-semibold">
 							What do we do?
 						</h2>
@@ -36,7 +36,7 @@ export default function Home() {
 							websites and web applications that are tailored to your needs.
 						</p>
 					</div>
-					<div className="homecard max-w-3xl space-y-5 font-arial justify-center mx-auto text-background bg-foreground/20 rounded-xl p-12 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black transition-all duration-300 text-center">
+					<div className="homecard max-w-2xl space-y-5 font-arial justify-center mx-auto text-background bg-foreground/20 rounded-xl p-10 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black transition-all duration-300 text-center">
 						<h2 className=" text-2xl text-center font-arial font-semibold">
 							What have we built?
 						</h2>
@@ -52,7 +52,7 @@ export default function Home() {
 							View Our Work
 						</a>
 					</div>
-					<div className="homecard max-w-3xl space-y-5 font-arial mx-auto text-background bg-foreground/20 rounded-xl p-12 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black transition-all duration-300 text-center">
+					<div className="homecard max-w-2xl space-y-5 font-arial mx-auto text-background bg-foreground/20 rounded-xl p-10 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black transition-all duration-300 text-center">
 						<h2 className=" text-2xl text-center font-arial font-semibold">
 							Why Us?
 						</h2>
