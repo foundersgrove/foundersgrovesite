@@ -1,102 +1,92 @@
 import Image from "next/image";
+import NavBar from "./components/navbar";
 
 export default function Home() {
+	//surrounding div old classes className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
+	// main old classes className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
 	return (
-		<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-			<main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-				<Image
-					className="dark:invert"
-					src="/next.svg"
-					alt="Next.js logo"
-					width={180}
-					height={38}
-					priority
-				/>
-				<ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-					<li className="mb-2">
-						Get started by editing{" "}
-						<code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded-sm font-semibold">
-							src/app/page.tsx
-						</code>
-						.
-					</li>
-					<li>Save and see your changes instantly.</li>
-					<button className="btn w-64 rounded-full">Button</button>
-				</ol>
-
-				<div className="flex gap-4 items-center flex-col sm:flex-row">
-					<a
-						className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
+		<div>
+			<main className="wrapper">
+				<header className="h-full">
+					<img
+						src="/imgs/RedwoodBackground.jpg"
+						alt="background image"
+						className="back"
+					/>
+					<img
+						src="/imgs/RedwoodSingle.png"
+						alt="Redwood Tree Single"
+						className="fore"
+					/>
+					<div
+						className="font-arial text-background bg-foreground/20 space-y-1 p-12 sm:p-20 md:p-28 
+					rounded-xl max-w-5xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black 
+					transition-all duration-300 text-center z-20"
 					>
-						<Image
-							className="dark:invert"
-							src="/vercel.svg"
-							alt="Vercel logomark"
-							width={20}
-							height={20}
-						/>
-						Deploy now
-					</a>
-					<a
-						className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-						href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
+						<h1 className=" md:text-4xl text-3xl text-center font-arial font-semibold">
+							Founders Grove
+						</h1>
+						<p>Lets Bring Something to Life</p>
+					</div>
+				</header>
+				<div className="space-y-24 mx-4">
+					<div
+						className="homecard space-y-5 font-arial max-w-2xl mx-auto text-background bg-foreground/20 
+					rounded-xl p-10 backdrop-filter shadow-lg shadow-black/50 hover:shadow-black transition-all 
+					duration-300 backdrop-blur-lg text-center"
 					>
-						Read our docs
-					</a>
+						<h2 className=" text-2xl text-center font-arial font-semibold">
+							What do we do?
+						</h2>
+						<p className="text-l font-normal font-arial">
+							We are a team of developers, designers, and project managers that
+							are dedicated to bringing ideas to life. We specialize in creating
+							websites and web applications that are tailored to your needs.
+						</p>
+					</div>
+					<div
+						className="homecard max-w-2xl space-y-5 font-arial mx-auto text-background bg-foreground/20 
+						rounded-xl p-10 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black 
+						transition-all duration-300 text-center"
+					>
+						<h2 className=" text-2xl text-center font-arial font-semibold">
+							What have we built?
+						</h2>
+						<p className="text-l font-normal font-arial">
+							We have built a variety of websites and web applications for a
+							diverse range of clients. Our projects include e-commerce sites,
+							blogs, and custom web applications.
+						</p>
+						<a
+							className="btn glass hover:bg-foreground/20 text-l text-background"
+							href="work"
+						>
+							View Our Work
+						</a>
+					</div>
+					<div
+						className="homecard max-w-2xl space-y-5 font-arial mx-auto text-background bg-foreground/20 
+					rounded-xl p-10 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black 
+					transition-all duration-300 text-center"
+					>
+						<h2 className=" text-2xl text-center font-arial font-semibold">
+							Why Us?
+						</h2>
+						<p className="text-l font-normal font-arial">
+							We are a team of experienced professionals who are passionate
+							about creating high-quality websites and web applications. We are
+							committed to providing our clients with the best possible service
+							and delivering projects on time and on budget.
+						</p>
+						<a
+							className="btn glass hover:bg-foreground/20 text-l text-background"
+							href="team"
+						>
+							Meet Our Team
+						</a>
+					</div>
 				</div>
 			</main>
-			<footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-				<a
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-					href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Image
-						aria-hidden
-						src="/file.svg"
-						alt="File icon"
-						width={16}
-						height={16}
-					/>
-					Learn
-				</a>
-				<a
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-					href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Image
-						aria-hidden
-						src="/window.svg"
-						alt="Window icon"
-						width={16}
-						height={16}
-					/>
-					Examples
-				</a>
-				<a
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-					href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Image
-						aria-hidden
-						src="/globe.svg"
-						alt="Globe icon"
-						width={16}
-						height={16}
-					/>
-					Go to nextjs.org →
-				</a>
-			</footer>
 		</div>
 	);
 }
