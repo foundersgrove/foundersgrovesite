@@ -25,13 +25,52 @@ export default function Home() {
 						<p>Lets Bring Something to Life</p>
 					</div>
 				</header>
-
-				<section>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-					mollitia aspernatur at ad accusamus neque doloribus praesentium ut
-					numquam repellendus. Sapiente repellat odit cupiditate expedita, quae
-					consequuntur minima ad magnam!
-				</section>
+				<div className="space-y-24">
+					<div className="homecard space-y-5 font-arial max-w-4xl mx-auto text-background bg-foreground/20 rounded-2xl p-12 backdrop-filter backdrop-blur-lg shadow-2xl text-center">
+						<h2 className=" text-2xl text-center font-arial font-semibold">
+							What do we do?
+						</h2>
+						<p>
+							We are a team of developers, designers, and project managers that
+							are dedicated to bringing your ideas to life. We specialize in
+							creating websites and web applications that are tailored to your
+							needs.
+						</p>
+					</div>
+					<div className="homecard max-w-4xl space-y-5 font-arial mx-auto text-background bg-foreground/20 rounded-2xl p-12 backdrop-filter backdrop-blur-lg shadow-2xl text-center">
+						<h2 className=" text-2xl text-center font-arial font-semibold">
+							What have we built?
+						</h2>
+						<p>
+							We have built a variety of websites and web applications for a
+							diverse range of clients. Our projects include e-commerce sites,
+							blogs, and custom web applications.
+						</p>
+						<a
+							className="btn glass hover:bg-foreground/20 text-l text-background"
+							href="work"
+						>
+							View Our Work
+						</a>
+					</div>
+					<div className="homecard max-w-4xl space-y-5 font-arial mx-auto text-background bg-foreground/20 rounded-2xl p-12 backdrop-filter backdrop-blur-lg shadow-2xl text-center">
+						<h2 className=" text-2xl text-center font-arial font-semibold">
+							Why Us?
+						</h2>
+						<p>
+							We are a team of experienced professionals who are passionate
+							about creating high-quality websites and web applications. We are
+							committed to providing our clients with the best possible service
+							and delivering projects on time and on budget.
+						</p>
+						<a
+							className="btn glass hover:bg-foreground/20 text-l text-background"
+							href="team"
+						>
+							Meet Our Team
+						</a>
+					</div>
+				</div>
 			</main>
 		</div>
 	);
