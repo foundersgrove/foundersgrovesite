@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<div>
 			<main className="wrapper">
-				<header>
+				<header className="h-full">
 					<img
 						src="/imgs/RedwoodBackground.jpg"
 						alt="background image"

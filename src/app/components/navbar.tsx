@@ -1,4 +1,4 @@
-export default function NavBar() {
+export default function NavBar({}) {
 	return (
 		<div>
 			{/* <nav className="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg shadow-md">
@@ -39,30 +39,33 @@ export default function NavBar() {
 						</div>
 						<ul
 							tabIndex={0}
-							className="menu menu-md glass rounded-b-md dropdown-content bg-foreground/80 text-background backdrop-filter backdrop-blur-lg shadow-xl z-50 mt-3 w-52 p-2 "
+							className="menu menu-md rounded-b-md dropdown-content bg-black/80 text-white backdrop-filter backdrop-blur-lg shadow-xl z-50 mt-3 w-52 p-2 "
 						>
 							<li>
-								<a>Home</a>
+								<a href="/">Home</a>
 							</li>
 							<li>
-								<a>Our Work</a>
+								<a href="work">Our Work</a>
 							</li>
 							<li>
 								<a>Our Team</a>
 							</li>
 						</ul>
 					</div>
-					<a className="btn btn-ghost hover:glass text-xl text-background">
+					<a
+						className="btn btn-ghost hover:glass text-xl text-background"
+						href="/"
+					>
 						Founders Grove
 					</a>
 				</div>
 				<div className="navbar-center hidden lg:flex">
-					<ul className="menu menu-horizontal px-1">
+					<ul className="menu menu-horizontal px-1 text-background">
 						<li>
-							<a>Home</a>
+							<a href="/">Home</a>
 						</li>
 						<li>
-							<a>Our Work</a>
+							<a href="work">Our Work</a>
 						</li>
 						<li>
 							<a>Our Team</a>
