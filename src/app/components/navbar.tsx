@@ -14,7 +14,7 @@ export default function NavBar({}) {
 					</div>
 				</div>
 			</nav> */}
-			<div className="navbar fixed top-0 left-0 w-full z-50 bg-foreground/20 backdrop-blur-lg shadow-xl">
+			<div className="navbar fixed top-0 left-0 w-full z-50 bg-foreground/20 backdrop-blur-lg shadow-lg shadow-black/50">
 				<div className="navbar-start">
 					<div className="dropdown">
 						<div
@@ -48,7 +48,7 @@ export default function NavBar({}) {
 								<a href="work">Our Work</a>
 							</li>
 							<li>
-								<a>Our Team</a>
+								<a href="team">Our Team</a>
 							</li>
 						</ul>
 					</div>
@@ -68,7 +68,7 @@ export default function NavBar({}) {
 							<a href="work">Our Work</a>
 						</li>
 						<li>
-							<a>Our Team</a>
+							<a href="team">Our Team</a>
 						</li>
 					</ul>
 				</div>
