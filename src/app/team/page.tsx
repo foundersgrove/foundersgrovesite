@@ -4,11 +4,11 @@ export default function OurTeam() {
 			{/* Background Image */}
 			<div className="absolute inset-0 bg-[url('/imgs/DarkRedwoodBG.jpg')] bg-cover bg-center bg-no-repeat"></div>
 
-			{/* Navbar Padding Fix */}
-			<div className="relative z-10 flex flex-col flex-grow pt-24">
-				<div className="container mx-auto space-y-8">
+			{/* Navbar Padding Fix pt-24 */}
+			<div className="relative z-10 flex flex-col flex-grow pt-24 justify-center">
+				<div className="space-y-8">
 					{/* Title */}
-					<div className="text-center bg-foreground/5 shadow-lg shadow-black/50 backdrop-blur-lg text-background font-arial font-semibold text-3xl p-6 ">
+					<div className="text-center bg-foreground/5 shadow-lg shadow-black/50 backdrop-blur-lg text-background font-arial font-semibold text-2xl p-6 ">
 						Meet Our Team
 					</div>
 
@@ -54,7 +54,7 @@ export default function OurTeam() {
 				</div>
 
 				{/* Bottom Padding */}
-				<div className="h-28"></div>
+				<div className="h-50"></div>
 			</div>
 		</div>
 	);
