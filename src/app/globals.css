@@ -74,7 +74,7 @@ header {
 
 .back {
 	/* scale: 2; */
-	transform: scale(2);
+	transform: translateZ(-10px) scale(2);
 	animation: back-zoom linear;
 	animation-timeline: scroll(y);
 }
