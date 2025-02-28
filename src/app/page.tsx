@@ -1,6 +1,14 @@
+"use client";
 import HomeCard from "./components/homeCard";
+import { useRef } from "react";
 
 export default function Home() {
+	const modalRef = useRef<HTMLDialogElement>(null);
+	const handleClick = () => {
+		if (modalRef.current) {
+			modalRef.current?.showModal();
+		}
+	};
 	//surrounding div old classes className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
 	// main old classes className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
 	return (
@@ -35,7 +43,7 @@ export default function Home() {
 							are dedicated to bringing ideas to life. We specialize in creating
 							websites and web applications that are tailored to your needs.`}
 						btn={null}
-						btnLink={null}
+						btnLink={undefined}
 					/>
 					<HomeCard
 						title={`What have we built?`}
@@ -60,8 +68,18 @@ export default function Home() {
 							our services, please get in touch. We would love to hear from you
 							and discuss how we can help bring your ideas to life.`}
 						btn={`Contact Us`}
-						btnLink={`contact`}
+						btnLink={undefined}
+						onClick={handleClick}
 					/>
+					<dialog id="my_modal_2" className="modal" ref={modalRef}>
+						<div className="modal-box">
+							<h3 className="font-bold text-lg">Hello!</h3>
+							<p className="py-4">Press ESC key or click outside to close</p>
+						</div>
+						<form method="dialog" className="modal-backdrop">
+							<button>close</button>
+						</form>
+					</dialog>
 				</div>
 			</main>
 		</div>

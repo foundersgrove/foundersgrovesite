@@ -2,7 +2,8 @@ interface HomeCardProps {
 	title: string;
 	description: string;
 	btn: string | null;
-	btnLink: string | null;
+	btnLink: string | undefined;
+	onClick?: () => void; // Optional click handler for the button (if provided)
 }
 
 export default function HomeCard({
@@ -10,6 +11,7 @@ export default function HomeCard({
 	description,
 	btn,
 	btnLink,
+	onClick,
 }: HomeCardProps) {
 	return (
 		<div
@@ -21,10 +23,11 @@ export default function HomeCard({
 				{title}
 			</h2>
 			<p className="text-l font-normal font-arial">{description}</p>
-			{btn && btnLink && (
+			{btn && (
 				<a
 					className="btn glass hover:bg-foreground/20 text-l text-background"
 					href={btnLink}
+					onClick={onClick}
 				>
 					{btn}
 				</a>
