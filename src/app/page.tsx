@@ -1,5 +1,3 @@
-import Image from "next/image";
-import NavBar from "./components/navbar";
 import HomeCard from "./components/homeCard";
 
 export default function Home() {
