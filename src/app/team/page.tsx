@@ -22,12 +22,16 @@ export default function OurTeam() {
 							}
 							img={"/imgs/DayneJones.jpeg"}
 							title={"CEO | Senior Developer"}
+							gitLink={`https://github.com/daynejones`}
+							linkedIn={`https://www.linkedin.com/in/daynejones/`}
 						/>
 						<TeamCard
 							name={"Sam McDonald"}
 							bio={`The Coolest guy with lots of awesome ideas to build.`}
 							img={"/imgs/SamMcDonald.jpg"}
 							title={"Genius | Junior Developer"}
+							gitLink={`https://github.com/SamMcDonald828`}
+							linkedIn={`https://www.linkedin.com/in/sam-mcdonald-42b2761a3/`}
 						/>
 					</div>
 				</div>
