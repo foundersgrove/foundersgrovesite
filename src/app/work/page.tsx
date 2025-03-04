@@ -1,9 +1,9 @@
 export default function OurWork({}) {
 	return (
-		<div className="relative flex flex-col min-h-screen">
+		<div className="relative flex flex-col min-h-screen gap-4">
 			{/* Background Image */}
 			<div className="absolute inset-0 bg-[url('/imgs/Forest.jpg')] bg-cover bg-center bg-no-repeat"></div>
-			<h1 className="mt-20 shadow-black/50 shadow-lg bg-foreground/20 backdrop-blur-lg backdrop-filter text-background font-arial font-semibold text-2xl p-6 text-center">
+			<h1 className="mt-20 shadow-black/50 shadow-lg bg-foreground/20 backdrop-blur-lg backdrop-filter text-background font-arial font-semibold text-2xl p-2 text-center">
 				Our Work
 			</h1>
 			<div className="flex flex-col items-center justify-center">
@@ -12,7 +12,7 @@ export default function OurWork({}) {
 					rounded-xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black 
 					transition-all duration-300 z-20"
 				>
-					<div className="flex max-w-5xl gap-4 sm:flex-row flex-col-reverse ">
+					<div className="flex max-w-5xl gap-6 sm:flex-row flex-col-reverse ">
 						<div className="flex flex-col h-full sm:w-3/5 space-y-6">
 							<h2 className="text-3xl font-semibold">
 								Civic Media: A New approach to Web Radio
@@ -20,10 +20,9 @@ export default function OurWork({}) {
 							<p className="text-lg">
 								Civic Media is a web Radio platform that acquired many Radio
 								Stations to help bring their reach further through the power of
-								the web. This project was a collaboration between Founders Grove
-								and a few other developers. Founders Grove was responsible for
-								successful development of the project specifically developing
-								new unique solutions to reaching Civic Medias audience.
+								the web. Founders Grove was responsible for successful
+								development of the project specifically developing new unique
+								solutions to reaching Civic Medias audience.
 							</p>
 						</div>
 						<div className="flex object-cover w-full sm:w-3/5 h-[265px] sm:h-[300px]">
