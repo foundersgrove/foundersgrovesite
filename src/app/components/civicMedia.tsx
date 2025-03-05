@@ -8,7 +8,7 @@ export default function CivicMedia({}) {
 			<div className="flex max-w-5xl gap-6 sm:flex-row flex-col-reverse ">
 				<div className="flex flex-col h-full sm:w-3/5 space-y-6">
 					<h2 className="text-3xl font-semibold">
-						Civic Media: A New approach to Web Radio
+						Civic Media: A New approach to Radio
 					</h2>
 					<p className="text-lg">
 						Civic Media is a web Radio platform that acquired many Radio
@@ -18,7 +18,7 @@ export default function CivicMedia({}) {
 						Civic Medias audience.
 					</p>
 				</div>
-				<div className="flex object-cover w-full sm:w-3/5 h-[265px] sm:h-[300px]">
+				<div className="flex object-cover w-full sm:w-3/5 h-[245px] sm:h-[300px]">
 					<iframe
 						className="w-full h-full rounded-lg"
 						title="civic media"

@@ -8,34 +8,37 @@ export default function Treehouse() {
 			<h2 className="text-3xl font-semibold">
 				Treehouse Schoolhouse Blog Redesign
 			</h2>
-			<div className="flex max-w-5xl gap-8 flex-col sm:flex-row-reverse">
-				<div className="flex flex-col h-full sm:w-3/5 space-y-6">
-					<p className="text-lg">
-						Founders Grove took on the task of redesigning the Blog for
-						Treehouse Schoolhouse a homeschool blog that already had great
-						traffic and had a strong online presence. The purpose of the
-						redesign was to increase marketing capabilities and improve the
-						overall user experience. This project utilized a headless wordpress
-						backend and had to be rerouted to take over the preexisting shopify
-						hosted domain.
+
+			<div className="flex max-w-5xl gap-8 flex-col md:flex-row">
+				<div className="flex flex-col md:flex-row  h-full gap-6 pb-8">
+					<div className="flex object-cover w-full h-[265px] md:h-[365px]">
+						<iframe
+							className="w-full h-full rounded-lg"
+							title="Treehouse Schoolhouse Blog"
+							src="/Homeschool.pdf#toolbar=0&navpanes=0"
+						/>
+					</div>
+					<p className="text-lg md:w-4/5 my-auto px-4">
+						Founders Grove took on the redesign and rebuild of the Treehouse
+						Schoolhouse blog, a homeschool blog that already had great traffic.
+						The project increased marketing capabilities and improved the
+						overall user experience while allowing the Treehouse team to see
+						more data with google analytics integration that wasn't possible
+						before. This project utilized a headless wordpress backend and had
+						to be rerouted to take over the preexisting shopify blog.
 					</p>
 				</div>
-				<div className="flex object-cover w-full sm:w-2/5 h-[265px] sm:h-[300px]">
-					<iframe
-						className="w-full h-full rounded-lg"
-						title="civic media"
-						src="/Homeschool.pdf#toolbar=0&navpanes=0"
-					/>
-				</div>
 			</div>
-			<div className="flex flex-col-reverse mx-auto sm:flex-row-reverse max-w-5xl gap-4">
+			<div className="flex flex-col-reverse mx-auto md:flex-row-reverse max-w-5xl gap-4">
 				<img
 					src="/imgs/Quiz.png"
-					alt="Player"
-					className="w-full sm:w-1/3 rounded-lg px-14"
+					alt="Homeschool Quiz"
+					className="w-full md:w-1/3 rounded-lg px-14"
 				/>
-				<div className="flex flex-col gap-4">
-					<h3 className="font-semibold text-2xl">The Homeschool Style Quiz</h3>
+				<div className="flex justify-center flex-col gap-4">
+					<h3 className="font-semibold text-2xl">
+						The Homeschooling Style Quiz
+					</h3>
 					<p>
 						The Homeschool Style Quiz was a project that was created to engage
 						the audience of the Treehouse Schoolhouse blog. The quiz was
