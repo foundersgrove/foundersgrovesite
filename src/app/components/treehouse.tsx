@@ -41,10 +41,12 @@ export default function Treehouse() {
 					</h3>
 					<p>
 						The Homeschool Style Quiz was a project that was created to engage
-						the audience of the Treehouse Schoolhouse blog. The quiz was
-						designed to be a fun and interactive way for parents to learn about
-						different homeschooling styles and to help them decide which style
-						would be best for their family.
+						the audience of Treehouse Schoolhouse. The quiz was designed to be a
+						fun and interactive way for parents to learn about different
+						homeschooling styles and to help them decide which style would be
+						best for their family. Our custom quiz solution was able to create a
+						better user experience and directly lead parents to purchasing new
+						products.
 					</p>
 				</div>
 			</div>
