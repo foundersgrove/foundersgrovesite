@@ -30,7 +30,7 @@ export default function OurTeam() {
 							bio={`The Coolest guy with lots of awesome ideas to build.`}
 							img={"/imgs/SamMcDonald.jpg"}
 							title={"Genius | Junior Developer"}
-							gitLink={`https://github.com/SamMcDonald828`}
+							gitLink={`https://github.com/sammcdonald-dev`}
 							linkedIn={`https://www.linkedin.com/in/sam-mcdonald-42b2761a3/`}
 						/>
 					</div>
