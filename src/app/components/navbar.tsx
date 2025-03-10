@@ -39,7 +39,7 @@ export default function NavBar({}) {
 						</div>
 						<ul
 							tabIndex={0}
-							className="menu menu-md rounded-b-md dropdown-content bg-black/80 text-white backdrop-filter backdrop-blur-lg shadow-xl z-50 mt-3 w-52 p-2 "
+							className="menu menu-md drop rounded-b-md dropdown-content bg-foreground/80 text-white backdrop-filter backdrop-blur-lg shadow-xl z-50 mt-3 w-52 p-2 "
 						>
 							<li>
 								<a href="/">Home</a>

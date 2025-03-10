@@ -9,7 +9,7 @@ export default function OurTeam() {
 			{/* Navbar Padding Fix pt-24 */}
 			<div className="relative z-10 flex flex-col flex-grow pt-24 justify-center">
 				<div className="space-y-8">
-					<div className="text-center bg-foreground/5 shadow-lg shadow-black/50 backdrop-blur-lg text-background font-arial font-semibold text-2xl p-6 ">
+					<div className="text-center bg-foreground/5 shadow-lg shadow-black/50 backdrop-blur-lg text-background font-arial font-semibold text-2xl p-4 ">
 						Meet Our Team
 					</div>
 
@@ -37,7 +37,7 @@ export default function OurTeam() {
 				</div>
 
 				{/* Bottom Padding */}
-				<div className="h-60"></div>
+				<div className="h-20"></div>
 			</div>
 		</div>
 	);
