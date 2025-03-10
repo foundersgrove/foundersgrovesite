@@ -78,9 +78,11 @@ export default function Home() {
 						onClick={handleClick}
 					/>
 					<dialog id="my_modal_2" className="modal" ref={modalRef}>
-						<div className="modal-box">
+						<div className="modal-box bg-white">
 							<CalendlyEmbed url="https://calendly.com/dayne-foundersgrove/30min?hide_event_type_details=1&hide_gdpr_banner=1" />
-							<p className="py-6">Press ESC key or click outside to close</p>
+							{/* <p className="py-6 text-black">
+								Press ESC key or click outside to close
+							</p> */}
 						</div>
 						<form method="dialog" className="modal-backdrop">
 							<button>close</button>
