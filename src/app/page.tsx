@@ -21,20 +21,23 @@ export default function Home() {
 						alt="background image"
 						className="back"
 					/>
-					<img
+					{/* <img
 						src="/imgs/RedwoodSingle.png"
 						alt="Redwood Tree Single"
 						className="fore"
-					/>
+					/> */}
 					<div
 						className="font-arial text-background bg-foreground/20 space-y-1 p-12 sm:p-20 md:p-28 
 					rounded-xl max-w-5xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black 
 					transition-all duration-300 text-center z-20"
 					>
-						<h1 className=" md:text-4xl text-3xl text-center font-arial font-semibold">
+						<h1 className=" md:text-4xl text-3xl text-center font-arial font-semibold mb-2">
 							Founders Grove
 						</h1>
-						<p>Lets Bring Something to Life</p>
+
+						<p className="">Lets Bring Something to Life</p>
+						<hr className="w-38 h-0 mx-auto my-1 rounded-sm md:my-1 bg-background"></hr>
+						<p className="italic">plant a seed below</p>
 					</div>
 				</header>
 				<div className="space-y-24 mx-4">
@@ -66,7 +69,7 @@ export default function Home() {
 					<HomeCard
 						title={`Get In Touch`}
 						description={`If you have a project in mind or would like to learn more about
-							our services, please get in touch. We would love to hear from you
+							our services, please book a meeting with us. We would love to hear from you
 							and discuss how we can help bring your ideas to life.`}
 						btn={`Contact Us`}
 						btnLink={undefined}
