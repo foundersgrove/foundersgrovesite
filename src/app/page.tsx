@@ -79,9 +79,9 @@ export default function Home() {
 					/>
 					<dialog id="my_modal_2" className="modal" ref={modalRef}>
 						<div className="modal-box">
-							<h3 className="font-bold text-lg">Hello!</h3>
-							<CalendlyEmbed url="YOUR_CALENDLY_EVENT_LINK_HERE" />
-							<p className="py-4">Press ESC key or click outside to close</p>
+							<h3 className="font-bold text-lg">Book a call with us!</h3>
+							<CalendlyEmbed url="https://calendly.com/dayne-foundersgrove/30min?hide_event_type_details=1&hide_gdpr_banner=1" />
+							<p className="py-6">Press ESC key or click outside to close</p>
 						</div>
 						<form method="dialog" className="modal-backdrop">
 							<button>close</button>
