@@ -28,7 +28,7 @@ export default function Home() {
 					/> */}
 					<div className="mx-4 my-auto">
 						<div
-							className="flex flex-col p-14 mx-auto font-arial text-background bg-foreground/20 space-y-1 w-full
+							className="mt-18 flex flex-col p-14 mx-auto font-arial text-background bg-foreground/20 space-y-1 w-full
 					rounded-xl max-w-2xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black 
 					transition-all duration-300 text-center z-20"
 						>
