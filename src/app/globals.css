@@ -39,42 +39,49 @@
 
 body {
 	/* min-height: 100vh; */
-	overflow-y: hidden;
+	overflow-y: scroll;
 	color: var(--foreground);
 	background: var(--background);
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper {
+/* .wrapper {
 	height: 100vh;
 	overflow-y: auto;
 	overflow-x: hidden;
-	perspective: 10px;
+	/* perspective: 10px;
 	position: relative;
-}
+} */
 
-header {
+/* header {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
 	transform-style: preserve-3d;
-	z-index: -1;
+	/* z-index: -1;
+} */
+
+footer {
+	position: relative;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
 }
 
 .back,
 .fore {
-	position: absolute;
+	position: fixed;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	z-index: -1;
+	/* z-index: -1; */
 }
 
 .back {
 	/* scale: 2; */
-	transform: translateZ(-10px) scale(2);
+	/* transform: translateZ(-10px) scale(2); */
 	animation: back-zoom linear;
 	animation-timeline: scroll(y);
 }
