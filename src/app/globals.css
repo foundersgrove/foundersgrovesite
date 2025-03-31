@@ -94,7 +94,7 @@ footer {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	transform-origin: 50% 100%;
+	transform-origin: center bottom;
 	animation: back-zoom linear;
 	animation-timeline: scroll(y);
 }
@@ -106,10 +106,10 @@ footer {
 
 @keyframes back-zoom {
 	from {
-		transform: scale(1);
+		transform: scale(1) translateX(0);
 	}
 	to {
-		transform: scale(2);
+		transform: scale(2.5) translateX(0);
 	}
 }
 
