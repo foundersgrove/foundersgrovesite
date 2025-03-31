@@ -80,8 +80,11 @@ footer {
 }
 
 .back {
-	/* scale: 2; */
-	/* transform: translateZ(-10px) scale(2); */
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transform-origin: 50% 100%;
 	animation: back-zoom linear;
 	animation-timeline: scroll(y);
 }
@@ -92,8 +95,11 @@ footer {
 }
 
 @keyframes back-zoom {
+	from {
+		transform: scale(1);
+	}
 	to {
-		scale: 4;
+		transform: scale(2);
 	}
 }
 
