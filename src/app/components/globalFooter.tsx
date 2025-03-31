@@ -14,7 +14,7 @@ export default function Footer() {
 	return (
 		<>
 			<footer className="relative mt-auto">
-				<div className="max-w-4xl mx-auto p-8 bg-neutral-400/80 rounded-xl">
+				<div className="max-w-4xl mx-auto p-8">
 					<div className="mb-8 space-y-4">
 						<div className="inline-block p-12 bg-[#739E71] hover:bg-[#557A53] text-white rounded-xl cursor-pointer transition-all duration-150 text-center shadow-[8px_8px_0px_0px_#557A53] hover:shadow-[12px_12px_0px_0px_#3C5A3A] hover:translate-x-[-4px] hover:translate-y-[-4px]" onClick={handleClick}>
 							<span className="text-[3rem] leading-none font-heading font-black tracking-wide">Tell us about your project</span>

@@ -12,7 +12,7 @@ export default function Home() {
 					alt="background image"
 					className="back"
 				/>
-				<div className="flex flex-col gap-96 py-96">
+				<div className="mx-8 flex flex-col gap-96 py-96">
 					{homeCards.map((card, index) => (
 						<HomeCard
 							key={index}
