@@ -1,9 +1,9 @@
 interface HomeCardProps {
 	title: string;
 	description: string;
-	btn: string | null;
-	btnLink: string | undefined;
-	onClick?: () => void; // Optional click handler for the button (if provided)
+	btn?: string | null;
+	btnLink?: string;
+	onClick?: () => void;
 }
 
 export default function HomeCard({
@@ -15,7 +15,7 @@ export default function HomeCard({
 }: HomeCardProps) {
 	return (
 		<div
-			className="homecard max-w-2xl space-y-5 font-arial mx-auto text-background bg-foreground/20 
+			className="homecard max-w-2xl font-arial mx-auto text-background bg-foreground/20 
 						rounded-xl p-10 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black 
 						transition-all duration-300 text-center"
 		>
