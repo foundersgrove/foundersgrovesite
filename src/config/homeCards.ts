@@ -42,12 +42,4 @@ export const homeCards: HomeCardConfig[] = [
 		btn: "Meet Our Team",
 		btnLink: "team",
 	},
-	{
-		title: "Get In Touch",
-		description: `If you have a project in mind or would like to learn more about
-			our services, please book a meeting with us. We would love to hear from you
-			and discuss how we can help bring your ideas to life.`,
-		btn: "Contact Us",
-		btnLink: undefined,
-	},
 ];

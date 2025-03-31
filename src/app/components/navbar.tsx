@@ -14,7 +14,7 @@ export default function NavBar({}) {
 					</div>
 				</div>
 			</nav> */}
-			<div className="navbar fixed top-0 left-0 w-full z-50 bg-foreground/20 backdrop-blur-lg shadow-lg shadow-black/50">
+			<div className="navbar absolute top-0 left-0 w-full z-50 bg-foreground/20 backdrop-blur-lg shadow-lg shadow-black/50">
 				<div className="navbar-start">
 					<div className="dropdown">
 						<div
@@ -53,7 +53,7 @@ export default function NavBar({}) {
 						</ul>
 					</div>
 					<a
-						className="btn btn-ghost hover:glass text-xl text-background"
+						className="btn btn-ghost hover:glass text-5xl text-gray-200"
 						href="/"
 					>
 						Founders Grove
