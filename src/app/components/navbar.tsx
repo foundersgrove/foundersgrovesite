@@ -14,17 +14,17 @@ export default function NavBar({}) {
 					</div>
 				</div>
 			</nav> */}
-			<div className="navbar absolute top-0 left-0 w-full z-50 bg-foreground/20 backdrop-blur-lg shadow-lg shadow-black/50">
+			<div className="navbar absolute top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md shadow-lg">
 				<div className="navbar-start">
 					<div className="dropdown">
 						<div
 							tabIndex={0}
 							role="button"
-							className="btn btn-ghost hover:glass text-background lg:hidden"
+							className="btn btn-ghost lg:hidden text-white hover:bg-white/10"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								className="h-6 w-6"
+								className="h-5 w-5"
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
@@ -39,37 +39,25 @@ export default function NavBar({}) {
 						</div>
 						<ul
 							tabIndex={0}
-							className="menu menu-md drop rounded-b-md dropdown-content bg-foreground/80 text-background backdrop-filter backdrop-blur-lg shadow-xl z-50 mt-3 w-52 p-2 "
+							className="menu menu-md dropdown-content mt-3 z-[1] p-2 shadow-lg bg-black/80 backdrop-blur-md rounded-box w-52"
 						>
-							<li>
-								<a href="/">Home</a>
-							</li>
-							<li>
-								<a href="work">Our Work</a>
-							</li>
-							<li>
-								<a href="team">Our Team</a>
-							</li>
+							<li><a className="text-white hover:text-white/80" href="/">Home</a></li>
+							<li><a className="text-white hover:text-white/80" href="work">Our Work</a></li>
+							<li><a className="text-white hover:text-white/80" href="team">Our Team</a></li>
 						</ul>
 					</div>
 					<a
-						className="btn btn-ghost hover:glass text-5xl text-gray-200"
+						className="btn btn-ghost text-2xl font-heading text-white hover:bg-white/10 normal-case"
 						href="/"
 					>
 						Founders Grove
 					</a>
 				</div>
 				<div className="navbar-center hidden lg:flex">
-					<ul className="menu menu-horizontal px-1 text-background text-l">
-						<li>
-							<a href="/">Home</a>
-						</li>
-						<li>
-							<a href="work">Our Work</a>
-						</li>
-						<li>
-							<a href="team">Our Team</a>
-						</li>
+					<ul className="menu menu-horizontal px-1 text-white text-sm font-medium tracking-wide">
+						<li><a className="hover:bg-white/10" href="/">Home</a></li>
+						<li><a className="hover:bg-white/10" href="work">Our Work</a></li>
+						<li><a className="hover:bg-white/10" href="team">Our Team</a></li>
 					</ul>
 				</div>
 				<div className="navbar-end">

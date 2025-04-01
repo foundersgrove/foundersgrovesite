@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Outfit, Plus_Jakarta_Sans, Work_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/globalFooter";
@@ -22,6 +22,12 @@ const plusJakarta = Plus_Jakarta_Sans({
 	variable: "--font-plus-jakarta",
 });
 
+const workSans = Work_Sans({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-work-sans",
+});
+
 export const metadata: Metadata = {
 	title: "Founders Grove",
 	description: "Lets Bring Something to Life",
@@ -33,7 +39,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`${inter.variable} ${outfit.variable} ${plusJakarta.variable}`}>
+		<html lang="en" className={`${inter.variable} ${outfit.variable} ${plusJakarta.variable} ${workSans.variable}`}>
 			<body className="antialiased">
 				<div className="wrapper">
 					<NavBar />

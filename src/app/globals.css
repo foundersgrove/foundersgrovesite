@@ -18,7 +18,7 @@
 	:root {
 		--font-sans: var(--font-inter);
 		--font-heading: var(--font-outfit);
-		--font-body: var(--font-plus-jakarta);
+		--font-body: var(--font-work-sans);
 	}
 
 	*,
