@@ -1,4 +1,5 @@
 import TeamCard from "../components/teamCard";
+import { teamMembers } from "./teamConfig";
 
 export default function OurTeam() {
 	return (
@@ -8,31 +9,24 @@ export default function OurTeam() {
 
 			{/* Navbar Padding Fix pt-24 */}
 			<div className="relative z-10 flex flex-col flex-grow pt-24 justify-center">
-				<div className="space-y-8">
-					<div className="text-center bg-foreground/5 shadow-lg shadow-black/50 backdrop-blur-lg text-background font-arial font-semibold text-2xl p-4 ">
-						Meet Our Team
+				<div className="space-y-8 max-w-5xl mx-auto px-4">
+					<div className="text-center bg-foreground/5 shadow-lg shadow-black/50 backdrop-blur-lg text-background font-arial font-semibold text-xl md:text-2xl p-6 md:p-8 mx-2 rounded-lg">
+						<h1 className="md:tracking-wide">Meet Our Team</h1>
 					</div>
 
 					{/* Team Members */}
-					<div className="grid gap-8 mx-4">
-						<TeamCard
-							name={"Dayne Jones"}
-							bio={
-								"Founder of Founders Grove, and my uncle. Cool guy, just had twins. Codes in his sleep."
-							}
-							img={"/imgs/DayneJones.jpeg"}
-							title={"CEO | Senior Developer"}
-							gitLink={`https://github.com/daynejones`}
-							linkedIn={`https://www.linkedin.com/in/daynejones/`}
-						/>
-						<TeamCard
-							name={"Sam McDonald"}
-							bio={`The Coolest guy with lots of awesome ideas to build.`}
-							img={"/imgs/SamMcDonald.jpg"}
-							title={"Genius | Junior Developer"}
-							gitLink={`https://github.com/sammcdonald-dev`}
-							linkedIn={`https://www.linkedin.com/in/sam-mcdonald-42b2761a3/`}
-						/>
+					<div className="grid gap-8 mx-2 md:mx-auto">
+						{teamMembers.map((member, index) => (
+							<TeamCard
+								key={index}
+								name={member.name}
+								bio={member.bio}
+								img={member.img}
+								title={member.title}
+								gitLink={member.gitLink}
+								linkedIn={member.linkedIn}
+							/>
+						))}
 					</div>
 				</div>
 

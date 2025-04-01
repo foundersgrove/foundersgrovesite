@@ -4,15 +4,13 @@ import { homeCards } from "@/config/homeCards";
 
 export default function Home() {
 	return (
-		<div>
-			<main>
-				<header className="relative flex flex-col"></header>
-				<img
-					src="/imgs/RedwoodBackground.jpg"
-					alt="background image"
-					className="back"
-				/>
-				<div className="mx-8 flex flex-col gap-96 py-96">
+		<div className="relative flex flex-col min-h-screen">
+			{/* Background Image */}
+			<div className="absolute inset-0 bg-[url('/imgs/RedwoodBackground.jpg')] bg-cover bg-center bg-no-repeat"></div>
+			
+			{/* Main Content */}
+			<div className="relative z-10 flex-grow pt-24">
+				<div className="mx-8 flex flex-col gap-96 py-40">
 					{homeCards.map((card, index) => (
 						<HomeCard
 							key={index}
@@ -23,7 +21,7 @@ export default function Home() {
 						/>
 					))}
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }
