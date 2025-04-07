@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<div className="relative flex flex-col min-h-screen">
 			{/* Background Image */}
-			<div className="absolute inset-0 bg-[url('/imgs/RedwoodBackground.jpg')] bg-cover bg-center bg-no-repeat"></div>
+			<div className="back absolute inset-0 bg-[url('/imgs/RedwoodBackground.jpg')] bg-cover bg-center bg-no-repeat"></div>
 			
 			{/* Main Content */}
 			<div className="relative z-10 flex-grow pt-24">
