@@ -18,6 +18,9 @@ export default function Home() {
 							description={card.description}
 							btn={card.btn}
 							btnLink={card.btnLink}
+							isHeader={card.isHeader}
+							subtitle={card.subtitle}
+							onClick={card.onClick}
 						/>
 					))}
 				</div>

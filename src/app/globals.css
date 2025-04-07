@@ -126,17 +126,130 @@ section {
 	color: white;
 }
 
+/* Modified to not interfere with plant growth animations */
 .homecard {
-	scale: 0.8;
 	opacity: 0;
-	animation: fade-in linear forwards;
+	animation: homecard-fade-in 0.5s ease-out forwards;
+	animation-delay: 0.2s;
 	animation-timeline: view();
-	animation-range: 200px 400px;
+	animation-range: entry 10% cover 30%;
 }
 
-@keyframes fade-in {
+@keyframes homecard-fade-in {
 	to {
-		scale: 1;
 		opacity: 1;
+	}
+}
+
+/* Plant growth animations */
+.plant-container {
+	position: relative;
+	min-height: 200px;
+}
+
+.soil-effect {
+	animation: soil-grow 1.5s ease-out forwards;
+	animation-delay: 0.2s;
+}
+
+@keyframes soil-grow {
+	0% {
+		width: 0;
+		opacity: 0;
+	}
+	10% {
+		width: 10%;
+		opacity: 0.3;
+	}
+	50% {
+		width: 30%;
+		opacity: 0.7;
+		box-shadow: 0 0 10px 2px rgba(90, 122, 88, 0.5);
+	}
+	100% {
+		width: 50%;
+		opacity: 1;
+		box-shadow: 0 0 15px 3px rgba(90, 122, 88, 0.7);
+	}
+}
+
+.plant-grow {
+	transform-origin: bottom center;
+	opacity: 0;
+	animation: plant-grow-animation 3s ease-out forwards;
+	animation-delay: 0.5s;
+}
+
+.plant-grow-delay {
+	transform-origin: bottom center;
+	opacity: 0;
+	animation: plant-grow-animation 3s ease-out 1.2s forwards;
+}
+
+.plant-grow-delay-2 {
+	transform-origin: bottom center;
+	opacity: 0;
+	animation: plant-grow-animation 3s ease-out 2s forwards;
+}
+
+@keyframes plant-grow-animation {
+	0% {
+		transform: scaleY(0) translateY(50%);
+		opacity: 0;
+		color: #557A53;
+	}
+	20% {
+		transform: scaleY(0.2) translateY(40%);
+		opacity: 0.4;
+		color: #6A9968;
+	}
+	40% {
+		transform: scaleY(0.4) translateY(30%) rotate(2deg);
+		opacity: 0.6;
+		color: #7FB87D;
+	}
+	60% {
+		transform: scaleY(0.7) translateY(20%) rotate(-1deg);
+		opacity: 0.8;
+		color: #94D292;
+	}
+	80% {
+		transform: scaleY(0.95) translateY(5%) rotate(1deg);
+		opacity: 0.9;
+		color: #A9ECA7;
+	}
+	90% {
+		transform: scaleY(1.02) translateY(-2%) rotate(-0.5deg);
+		opacity: 1;
+		color: #B4FFB2;
+	}
+	100% {
+		transform: scaleY(1) translateY(0) rotate(0);
+		opacity: 1;
+		color: inherit;
+	}
+}
+
+.plant-seed {
+	animation: seed-appear 1s ease-out forwards;
+}
+
+@keyframes seed-appear {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, 10px) scale(0.5);
+	}
+	50% {
+		opacity: 0.7;
+		transform: translate(-50%, 5px) scale(0.8);
+	}
+	80% {
+		opacity: 1;
+		transform: translate(-50%, 0) scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-50%, 0) scale(1);
+		box-shadow: 0 0 10px 2px rgba(60, 90, 58, 0.6);
 	}
 }
