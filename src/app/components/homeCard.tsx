@@ -22,7 +22,7 @@ export default function HomeCard({
 			<h2 className="text-3xl text-center font-arial font-semibold mb-4">
 				{title}
 			</h2>
-			<p className="text-xl font-normal font-arial mx-8">{description}</p>
+			<p className="text-xl font-normal font-arial mx-6">{description}</p>
 			{btn && (
 				<a href={btnLink} onClick={onClick}>
 					<div
