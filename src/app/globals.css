@@ -184,13 +184,13 @@ section {
 		background-position: 0 0;
 		opacity: 1;
 		border-right: 1px solid #739e71;
-		font-weight: 200;
+		font-weight: 100;
 	}
 	50% {
 		background-position: 150px 0;
 		opacity: 1;
 		border-right: 1px solid #739e71;
-		font-weight: 400;
+		font-weight: 300;
 	}
 	100% {
 		background-position: 400px 0;
