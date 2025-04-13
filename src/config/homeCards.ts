@@ -9,14 +9,14 @@ export interface HomeCardConfig {
 }
 
 export const homeCards: HomeCardConfig[] = [
-	{
-		title: "Founders Grove",
-		description: "Lets Bring Something to Life",
-		subtitle: "plant a seed below",
-		isHeader: true,
-		btn: null,
-		btnLink: undefined,
-	},
+	// {
+	// 	title: "Founders Grove",
+	// 	description: "Lets Bring Something to Life",
+	// 	subtitle: "plant a seed below",
+	// 	isHeader: true,
+	// 	btn: null,
+	// 	btnLink: undefined,
+	// },
 	{
 		title: "What do we do? 🦾",
 		description: `We are a team of developers, designers, and project managers that

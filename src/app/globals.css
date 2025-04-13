@@ -129,7 +129,6 @@ section {
 }
 
 .main {
-	color: #000000;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 800;
 	font-size: 20px;
@@ -144,16 +143,34 @@ section {
 	opacity: 0;
 	font-family: "Work Sans", sans-serif;
 	margin: 0 auto auto auto;
-	background: linear-gradient(to right, #739e71, #739e71, #739e71);
-	font-weight: 800;
-	font-size: 100px;
-	width: 230px;
+	background: linear-gradient(
+		to right,
+		#3a4f39,
+		#466145,
+		#4b684a,
+		#577855,
+		#5e825c,
+		#739e71,
+		#82b17f,
+		#a6e2a3,
+		#9eda9b
+	);
+	background-size: 390px 100%;
+	background-position: 0 0;
+	font-weight: 1000;
+	font-size: 150px;
+	width: 390px;
+	@media screen and (max-width: 768px) {
+		width: 270px;
+		font-size: 100px;
+	}
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	overflow: hidden;
 	animation: shring-animation 2.2s steps(40, end) 2s forwards,
-		blink 0.5s step-end infinite alternate;
+		blink 0.5s step-end infinite alternate,
+		font-change 2.5s steps(40, end) 1.8s forwards;
 }
 
 @keyframes shring-animation {
@@ -161,21 +178,61 @@ section {
 		background-position: 0 0;
 		opacity: 0;
 		width: 0;
+		font-weight: 100;
 	}
 	1% {
 		background-position: 0 0;
 		opacity: 1;
 		border-right: 1px solid #739e71;
+		font-weight: 200;
 	}
 	50% {
 		background-position: 150px 0;
 		opacity: 1;
 		border-right: 1px solid #739e71;
+		font-weight: 400;
 	}
 	100% {
 		background-position: 400px 0;
 		opacity: 1;
 		border-right: 1px solid #739e71;
+		font-weight: 900;
+	}
+}
+
+@keyframes font-change {
+	0% {
+		font-family: "Times New Roman", Times, serif;
+	}
+	10% {
+		font-family: "Courier New", Courier, monospace;
+	}
+	20% {
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
+	30% {
+		font-family: cursive;
+	}
+	40% {
+		font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	}
+	50% {
+		font-family: fantasy;
+	}
+	60% {
+		font-family: Georgia, "Times New Roman", Times, serif;
+	}
+	70% {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+	80% {
+		font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	}
+	90% {
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	}
+	100% {
+		font-family: "Work Sans", sans-serif;
 	}
 }
 
