@@ -51,27 +51,14 @@ body {
 	font-family: var(--font-body);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: var(--font-heading);
 }
-
-/* .wrapper {
-	height: 100vh;
-	overflow-y: auto;
-	overflow-x: hidden;
-	/* perspective: 10px;
-	position: relative;
-} */
-
-/* header {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	transform-style: preserve-3d;
-	/* z-index: -1;
-} */
 
 footer {
 	position: relative;
@@ -138,5 +125,75 @@ section {
 	to {
 		scale: 1;
 		opacity: 1;
+	}
+}
+
+.main {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	font-size: 20px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 240px;
+	animation: type 2s steps(40, end) forwards;
+}
+
+.life {
+	opacity: 0;
+	font-family: "Work Sans", sans-serif;
+	margin: 0 auto auto auto;
+	background: linear-gradient(to right, #739e71, #739e71, #739e71);
+	font-weight: 800;
+	font-size: 100px;
+	width: 230px;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	overflow: hidden;
+	animation: shring-animation 2.2s steps(40, end) 2s forwards,
+		blink 0.5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+	0% {
+		background-position: 0 0;
+		opacity: 0;
+		width: 0;
+	}
+	1% {
+		background-position: 0 0;
+		opacity: 1;
+		border-right: 1px solid #739e71;
+	}
+	50% {
+		background-position: 150px 0;
+		opacity: 1;
+		border-right: 1px solid #739e71;
+	}
+	100% {
+		background-position: 400px 0;
+		opacity: 1;
+		border-right: 1px solid #739e71;
+	}
+}
+
+@keyframes type {
+	0% {
+		width: 0;
+	}
+	1%,
+	99% {
+		border-right: 1px solid #739e71;
+	}
+	100% {
+		border-right: none;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
 	}
 }
