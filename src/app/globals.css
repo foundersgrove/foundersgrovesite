@@ -170,7 +170,12 @@ section {
 	overflow: hidden;
 	animation: shring-animation 2.2s steps(40, end) 2s forwards,
 		blink 0.5s step-end infinite alternate,
-		font-change 2.5s steps(40, end) 1.8s forwards;
+		font-change 2s steps(40, end) 1.8s forwards,
+		tracking-in-expand-fwd-bottom 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1.8s
+			both;
+
+	/* -webkit-animation: tracking-in-expand-fwd-bottom 2.2s
+		cubic-bezier(0.215, 0.61, 0.355, 1) both; */
 }
 
 @keyframes shring-animation {
@@ -252,5 +257,38 @@ section {
 @keyframes blink {
 	50% {
 		border-color: transparent;
+	}
+}
+
+@-webkit-keyframes tracking-in-expand-fwd-bottom {
+	0% {
+		letter-spacing: -0.5em;
+		-webkit-transform: translateZ(-700px) translateY(500px);
+		transform: translateZ(-700px) translateY(500px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		-webkit-transform: translateZ(0) translateY(0);
+		transform: translateZ(0) translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes tracking-in-expand-fwd-bottom {
+	0% {
+		letter-spacing: -0.5em;
+		-webkit-transform: translateZ(-700px) translateY(500px);
+		transform: translateZ(-700px) translateY(500px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		-webkit-transform: translateZ(0) translateY(0);
+		transform: translateZ(0) translateY(0);
+		opacity: 1;
 	}
 }
