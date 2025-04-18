@@ -36,8 +36,9 @@ export const homeCards: HomeCardConfig[] = [
 	{
 		title: "Why Us? 🌱",
 		description: `We are a team of experienced professionals who are passionate
-			about creating high-quality websites and web applications. We are
-			committed to providing our clients with the best possible service
+			about creating high-quality websites and web applications with 
+			homegrown code and solutions. We are committed to providing our clients 
+			with the best possible service
 			and delivering projects on time and on budget.`,
 		btn: "Meet Our Team",
 		btnLink: "team",
