@@ -116,15 +116,23 @@ section {
 .homecard {
 	scale: 0.8;
 	opacity: 0;
-	animation: fade-in linear forwards;
+	animation: fade-in-out linear forwards;
 	animation-timeline: view();
-	animation-range: 200px 400px;
+	animation-range: 0% 100%;
 }
 
-@keyframes fade-in {
-	to {
+@keyframes fade-in-out {
+	0% {
+		scale: 0.7;
+		opacity: 0;
+	}
+	50% {
 		scale: 1;
 		opacity: 1;
+	}
+	100% {
+		scale: 0.7;
+		opacity: 0;
 	}
 }
 

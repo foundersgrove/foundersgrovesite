@@ -11,7 +11,7 @@ export default function Home() {
 
 			{/* Main Content */}
 			<div className="relative z-10 flex-grow pt-24">
-				<div className="mx-8 flex flex-col gap-96 py-40">
+				<div className="mx-8 flex flex-col gap-96 py-50">
 					<TitleCard />
 					{homeCards.map((card, index) => (
 						<HomeCard
