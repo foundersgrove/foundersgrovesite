@@ -5,7 +5,7 @@ export default function Treehouse() {
 					rounded-xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black 
 					transition-all duration-300 z-20"
 		>
-			<h2 className="text-3xl font-semibold">
+			<h2 className="text-3xl font-semibold mx-auto">
 				Treehouse Schoolhouse Blog Redesign
 			</h2>
 
@@ -18,7 +18,7 @@ export default function Treehouse() {
 							src="/Homeschool.pdf#toolbar=0&navpanes=0"
 						/>
 					</div>
-					<p className="text-lg md:w-4/5 my-auto px-4">
+					{/* <p className="text-lg md:w-4/5 my-auto px-4">
 						Founders Grove took on the redesign and rebuild of the Treehouse
 						Schoolhouse blog, a homeschool blog that already had great traffic.
 						The project increased marketing capabilities and improved the
@@ -26,10 +26,26 @@ export default function Treehouse() {
 						more data with google analytics integration that wasn't possible
 						before. This project utilized a headless wordpress backend and had
 						to be rerouted to take over the preexisting shopify blog.
-					</p>
+					</p> */}
+					<ul className="list-disc list-inside space-y-5 text-lg">
+						<li>
+							Web Radio platform that acquired many Radio Stations to help bring
+							more reach through the power of the web
+						</li>
+						<li>
+							We were responsible for the development of the project
+							specifically developing new unique solutions to reaching Civic
+							Medias audience
+						</li>
+						<li>
+							Built a custom radio player that utilized advanced streaming
+							features of the Web Audio API in conjunction with React State
+							Management
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div className="flex flex-col-reverse mx-auto md:flex-row-reverse max-w-5xl gap-4">
+			{/* <div className="flex flex-col-reverse mx-auto md:flex-row-reverse max-w-5xl gap-4">
 				<img
 					src="/imgs/Quiz.png"
 					alt="Homeschool Quiz"
@@ -49,7 +65,7 @@ export default function Treehouse() {
 						products.
 					</p>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }
