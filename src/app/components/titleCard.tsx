@@ -7,9 +7,11 @@ export default function TitleCard({}) {
 		>
 			{/* <h2 className="text-3xl font-arial font-semibold mb-4">Founders Grove</h2> */}
 			<h2 className="main text-center text-background mx-auto font-normal font-arial">
-				Lets Bring Something to
+				Lets Build Your
 			</h2>
-			<p className="life">Life</p>
+			<p className="life" aria-label="Masterpiece">
+				&nbsp;<span className="typewriter thick"></span>
+			</p>
 		</div>
 	);
 }

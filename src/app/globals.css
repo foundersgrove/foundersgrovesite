@@ -114,23 +114,27 @@ section {
 }
 
 .homecard {
-	scale: 0.8;
-	opacity: 0;
+	scale: 1;
+	opacity: 1;
 	animation: fade-in-out linear forwards;
 	animation-timeline: view();
 	animation-range: 0% 100%;
 }
 
 @keyframes fade-in-out {
-	-20% {
+	0% {
 		scale: 0.8;
 		opacity: 0;
 	}
-	50% {
+	30% {
 		scale: 1;
-		opacity: 1;
+		opacity: 1.5;
 	}
-	120% {
+	60% {
+		scale: 1;
+		opacity: 1.5;
+	}
+	100% {
 		scale: 0.8;
 		opacity: 0;
 	}
@@ -178,7 +182,6 @@ section {
 	overflow: hidden;
 	animation: shring-animation 2.2s steps(40, end) 1.5s forwards,
 		blink 0.5s step-end infinite alternate;
-	/* font-change 2.2s steps(40, end) 1s forwards, */
 	/* tracking-in-expand-fwd-bottom 2.2s cubic-bezier(0.215, 0.61, 0.355, 1)
 			1.5s both; */
 
@@ -206,53 +209,6 @@ section {
 		/* background-position: 400px 0; */
 		opacity: 1;
 		border-right: 1px solid #739e71;
-	}
-}
-
-@keyframes font-change {
-	0% {
-		font-family: "Times New Roman", Times, serif;
-		font-weight: 50;
-	}
-	10% {
-		font-family: "Courier New", Courier, monospace;
-		font-weight: 100;
-	}
-	20% {
-		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-		font-weight: 200;
-	}
-	30% {
-		font-family: cursive;
-		font-weight: 300;
-	}
-	40% {
-		font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-		font-weight: 400;
-	}
-	50% {
-		font-family: fantasy;
-		font-weight: 500;
-	}
-	60% {
-		font-family: Georgia, "Times New Roman", Times, serif;
-		font-weight: 600;
-	}
-	70% {
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-weight: 700;
-	}
-	80% {
-		font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-		font-weight: 800;
-	}
-	90% {
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		font-weight: 900;
-	}
-	100% {
-		font-family: "Work Sans", sans-serif;
-		font-weight: 1000;
 	}
 }
 
@@ -291,6 +247,7 @@ section {
 		opacity: 1;
 	}
 }
+
 @keyframes tracking-in-expand-fwd-bottom {
 	0% {
 		letter-spacing: -0.5em;
@@ -305,5 +262,191 @@ section {
 		-webkit-transform: translateZ(0) translateY(0);
 		transform: translateZ(0) translateY(0);
 		opacity: 1;
+	}
+}
+
+@keyframes typing {
+	0.0000%,
+	27.3488% {
+		content: "";
+	}
+	1.1395%,
+	26.2093% {
+		content: "d";
+	}
+	2.2791%,
+	25.0698% {
+		content: "de";
+	}
+	3.4186%,
+	23.9302% {
+		content: "dev";
+	}
+	4.5581%,
+	22.7907% {
+		content: "deve";
+	}
+	5.6977%,
+	21.6512% {
+		content: "devel";
+	}
+	6.8372%,
+	20.5116% {
+		content: "develo";
+	}
+	7.9767%,
+	19.3721% {
+		content: "develop";
+	}
+	9.1163%,
+	18.2326% {
+		content: "develope";
+	}
+	10.2558%,
+	17.0930% {
+		content: "developer";
+	}
+
+	30.7674%,
+	51.2791% {
+		content: "";
+	}
+	31.9070%,
+	50.1395% {
+		content: "w";
+	}
+	33.0465%,
+	49.0000% {
+		content: "wr";
+	}
+	34.1860%,
+	47.8605% {
+		content: "wri";
+	}
+	35.3256%,
+	46.7209% {
+		content: "writ";
+	}
+	36.4651%,
+	45.5814% {
+		content: "write";
+	}
+	37.6047%,
+	44.4419% {
+		content: "writer";
+	}
+
+	54.6977%,
+	75.2093% {
+		content: "";
+	}
+	55.8372%,
+	74.0698% {
+		content: "r";
+	}
+	56.9767%,
+	72.9302% {
+		content: "re";
+	}
+	58.1163%,
+	71.7907% {
+		content: "rea";
+	}
+	59.2558%,
+	70.6512% {
+		content: "read";
+	}
+	60.3953%,
+	69.5116% {
+		content: "reade";
+	}
+	61.5349%,
+	68.3721% {
+		content: "reader";
+	}
+
+	78.6279%,
+	96.8605% {
+		content: "";
+	}
+	79.7674%,
+	95.7209% {
+		content: "h";
+	}
+	80.9070%,
+	94.5814% {
+		content: "hu";
+	}
+	82.0465%,
+	93.4419% {
+		content: "hum";
+	}
+	83.1860%,
+	92.3023% {
+		content: "huma";
+	}
+	84.3256%,
+	91.1628% {
+		content: "human";
+	}
+}
+
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+.typewriter {
+	--caret: currentcolor;
+}
+
+.typewriter::before {
+	content: "";
+	animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+	content: "";
+	border-right: 1px solid var(--caret);
+	animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+	border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+	border-right: 0;
+}
+
+@media (prefers-reduced-motion) {
+	.typewriter::after {
+		animation: none;
+	}
+
+	@keyframes sequencePopup {
+		0%,
+		100% {
+			content: "developer";
+		}
+		25% {
+			content: "writer";
+		}
+		50% {
+			content: "reader";
+		}
+		75% {
+			content: "human";
+		}
+	}
+
+	.typewriter::before {
+		content: "developer";
+		animation: sequencePopup 12s linear infinite;
 	}
 }

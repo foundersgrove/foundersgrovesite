@@ -16,7 +16,7 @@ export default function TeamCard({
 	linkedIn,
 }: TeamCardProps) {
 	return (
-		<div className="homecard flex flex-col md:flex-row items-center bg-foreground/20 rounded-xl p-6 backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-xl transition-all duration-300 text-background text-center md:text-left lg:max-w-3xl mx-auto">
+		<div className="flex flex-col md:flex-row items-center bg-foreground/20 rounded-xl p-6 backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-xl transition-all duration-300 text-background text-center md:text-left lg:max-w-3xl mx-auto">
 			<img
 				src={`${img}`}
 				alt={`${name}`}
