@@ -5,12 +5,11 @@ export default function Treehouse() {
 					rounded-xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black 
 					transition-all duration-300 z-20"
 		>
-			<h2 className="text-3xl font-semibold mx-auto">
-				Treehouse Schoolhouse Blog Redesign
-			</h2>
-
-			<div className="flex max-w-5xl gap-8 flex-col md:flex-row">
-				<div className="flex flex-col md:flex-row  h-full gap-6 pb-8">
+			<div className="flex max-w-5xl md:px-20 lg:px-40 gap-8 flex-col">
+				<div className="flex flex-col  h-full gap-6 pb-8">
+					<h2 className="text-3xl font-semibold mx-auto">
+						Treehouse Schoolhouse Blog Redesign
+					</h2>
 					<div className="flex object-cover w-full h-[265px] md:h-[365px]">
 						<iframe
 							className="w-full h-full rounded-lg"
