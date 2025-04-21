@@ -122,16 +122,16 @@ section {
 }
 
 @keyframes fade-in-out {
-	0% {
-		scale: 0.7;
+	-20% {
+		scale: 0.8;
 		opacity: 0;
 	}
 	50% {
 		scale: 1;
 		opacity: 1;
 	}
-	100% {
-		scale: 0.7;
+	120% {
+		scale: 0.8;
 		opacity: 0;
 	}
 }
@@ -153,7 +153,7 @@ section {
 	margin: 0 auto auto auto;
 	background: linear-gradient(
 		to right,
-		#3a4f39,
+		#506d4f,
 		#466145,
 		#4b684a,
 		#577855,
@@ -176,10 +176,10 @@ section {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	overflow: hidden;
-	animation: shring-animation 2.2s steps(40, end) 2s forwards,
+	animation: shring-animation 2.2s steps(40, end) 1.5s forwards,
 		blink 0.5s step-end infinite alternate,
-		font-change 2s steps(40, end) 1.8s forwards,
-		tracking-in-expand-fwd-bottom 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1.8s
+		font-change 2.2s steps(40, end) 1s forwards,
+		tracking-in-expand-fwd-bottom 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s
 			both;
 
 	/* -webkit-animation: tracking-in-expand-fwd-bottom 2.2s
@@ -188,22 +188,22 @@ section {
 
 @keyframes shring-animation {
 	0% {
-		background-position: 0 0;
+		/* background-position: 0 0; */
 		opacity: 0;
 		width: 0;
 	}
 	1% {
-		background-position: 0 0;
+		/* background-position: 0 0; */
 		opacity: 1;
 		border-right: 1px solid #739e71;
 	}
 	50% {
-		background-position: 150px 0;
+		/* background-position: 150px 0; */
 		opacity: 1;
 		border-right: 1px solid #739e71;
 	}
 	100% {
-		background-position: 400px 0;
+		/* background-position: 400px 0; */
 		opacity: 1;
 		border-right: 1px solid #739e71;
 	}
