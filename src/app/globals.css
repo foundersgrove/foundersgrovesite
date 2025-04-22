@@ -113,26 +113,49 @@ section {
 	color: white;
 }
 
-.homecard {
-	scale: 1;
-	opacity: 1;
-	animation: fade-in-out linear forwards;
-	animation-timeline: view();
-	animation-range: 0% 100%;
+@supports (animation-timeline: view()) {
+	.homecard {
+		animation: fade-in-out linear forwards;
+		animation-timeline: view();
+		animation-range: 0% 100%;
+	}
+}
+
+@supports not (animation-timeline: view()) {
+	.homecard {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 
 @keyframes fade-in-out {
+	0% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	30%,
+	60% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fade-in-out {
 	0% {
 		scale: 0.8;
 		opacity: 0;
 	}
 	30% {
 		scale: 1;
-		opacity: 1.5;
+		opacity: 1;
 	}
 	60% {
 		scale: 1;
-		opacity: 1.5;
+		opacity: 1;
 	}
 	100% {
 		scale: 0.8;
