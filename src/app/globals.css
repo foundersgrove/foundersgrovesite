@@ -147,7 +147,7 @@ section {
 	text-align: center;
 	white-space: nowrap;
 	overflow: hidden;
-	width: 240px;
+	width: 200px;
 	animation: type 2s steps(40, end) forwards;
 }
 
@@ -167,14 +167,16 @@ section {
 		#a6e2a3,
 		#9eda9b
 	);
-	background-size: 390px 100%;
+	background-size: 100%;
 	background-position: 0 0;
 	font-weight: 1000;
-	font-size: 100px;
-	width: 600px;
+	font-size: 90px;
+	width: 100%;
+	white-space: nowrap;
+
 	@media screen and (max-width: 768px) {
 		width: 400px;
-		font-size: 60px;
+		font-size: 50px;
 	}
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -515,12 +517,12 @@ section {
 
 .typewriter::after {
 	content: "";
-	border-right: 1px solid var(--caret);
-	animation: blink 0.5s linear infinite;
+	border-right: 1px solid white;
+	animation: blink 0.8s linear infinite;
 }
 
 .typewriter.thick::after {
-	border-right: 1ch solid var(--caret);
+	border-right: 1ch solid white;
 }
 
 @media (prefers-reduced-motion) {
