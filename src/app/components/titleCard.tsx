@@ -6,7 +6,7 @@ export default function TitleCard({}) {
 						transition-all duration-300 text-center"
 		>
 			{/* <h2 className="text-3xl font-arial font-semibold mb-4">Founders Grove</h2> */}
-			<h2 className="text-2xl font-semibold text-center text-background mx-auto font-arial">
+			<h2 className="text-2xl font-semibold text-center w-full text-background mx-auto font-arial">
 				Lets Build Your
 			</h2>
 			<p className="life" aria-label="Masterpiece">
