@@ -199,7 +199,7 @@ section {
 	white-space: nowrap;
 
 	@media screen and (max-width: 768px) {
-		width: 400px;
+		width: 100%;
 		font-size: 50px;
 	}
 	background-clip: text;
