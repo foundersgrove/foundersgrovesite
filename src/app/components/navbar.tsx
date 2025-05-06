@@ -16,6 +16,29 @@ export default function NavBar({}) {
 			</nav> */}
 			<div className="navbar absolute top-0 left-0 w-full z-50 bg-transparent">
 				<div className="navbar-start flex-1">
+					<a
+						className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-2 transition-colors min-w-0"
+						href="/"
+						aria-label="Founders Grove Logo and Homepage Link"
+					>
+						<div className="relative inline-block font-extrabold text-6xl sm:text-xl md:text-6xl tracking-wide whitespace-nowrap">
+							<span className="relative z-50 text-white" style={{
+								textShadow: `
+									-3px -3px 0 #739E71,  
+									3px -3px 0 #739E71,
+									-3px 3px 0 #739E71,
+									3px 3px 0 #739E71,
+									-4px 0 0 #739E71,
+									4px 0 0 #739E71,
+									0 -4px 0 #739E71,
+									0 4px 0 #739E71,
+									2px 2px 5px rgba(0,0,0,0.5)
+								`
+							}}>Founders Grove</span>
+						</div>
+					</a>
+				</div>
+				<div className="navbar-end flex-1">
 					<div className="dropdown">
 						<div
 							tabIndex={0}
@@ -58,27 +81,6 @@ export default function NavBar({}) {
 							</li>
 						</ul>
 					</div>
-					<a
-						className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-2 transition-colors min-w-0"
-						href="/"
-						aria-label="Founders Grove Logo and Homepage Link"
-					>
-						<div className="relative inline-block font-extrabold text-6xl sm:text-xl md:text-6xl tracking-wide whitespace-nowrap">
-							<span className="relative z-50 text-white" style={{
-								textShadow: `
-									-3px -3px 0 #739E71,  
-									3px -3px 0 #739E71,
-									-3px 3px 0 #739E71,
-									3px 3px 0 #739E71,
-									-4px 0 0 #739E71,
-									4px 0 0 #739E71,
-									0 -4px 0 #739E71,
-									0 4px 0 #739E71,
-									2px 2px 5px rgba(0,0,0,0.5)
-								`
-							}}>Founders Grove</span>
-						</div>
-					</a>
 				</div>
 				<div className="navbar-end hidden lg:flex">
 					<ul className="menu menu-horizontal px-1 text-background text-sm font-medium tracking-wide">

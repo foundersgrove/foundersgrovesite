@@ -6,14 +6,8 @@ export default function OurWork({}) {
 	return (
 		<div className="relative flex flex-col min-h-screen gap-4">
 			{/* Background Image */}
-			<div className="absolute inset-0 bg-[url('/imgs/Forest.jpg')] bg-cover bg-center bg-no-repeat"></div>
-			{/* <h1
-				className="mt-24 my-5 shadow-black/50 shadow-lg bg-foreground/20 backdrop-blur-lg backdrop-filter 
-			text-background font-arial font-semibold text-2xl p-4 text-center"
-			>
-				Our Work
-			</h1> */}
-			<div className="flex mt-24 flex-col items-center justify-center gap-24 mx-4">
+			<div className="absolute z-0 inset-0 bg-[url('/imgs/RedwoodBackground.jpg')] bg-cover bg-center bg-no-repeat"></div>
+			<div className="mt-36 z-10 flex flex-col items-center justify-center gap-24 mx-auto max-w-4xl">
 				<CivicMedia />
 				<Bengine />
 				<Treehouse />
