@@ -117,7 +117,7 @@ section {
 	.homecard {
 		animation: fade-in-out linear forwards;
 		animation-timeline: view();
-		animation-range: 0% 100%;
+		animation-range: 30% 100%;
 	}
 }
 

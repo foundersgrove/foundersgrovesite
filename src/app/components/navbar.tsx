@@ -14,7 +14,7 @@ export default function NavBar({}) {
 					</div>
 				</div>
 			</nav> */}
-			<div className="navbar absolute top-0 left-0 w-full z-50 bg-foreground/30 backdrop-blur-md shadow-lg">
+			<div className="navbar absolute top-0 left-0 w-full z-50 bg-transparent">
 				<div className="navbar-start flex-1">
 					<div className="dropdown">
 						<div
@@ -63,16 +63,21 @@ export default function NavBar({}) {
 						href="/"
 						aria-label="Founders Grove Logo and Homepage Link"
 					>
-						<div className="bg-stone-100 rounded-full p-1 sm:p-1.5 overflow-hidden flex-shrink-0">
-							<img
-								src="/logo.png"
-								alt=""
-								className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
-							/>
+						<div className="relative inline-block font-extrabold text-6xl sm:text-xl md:text-6xl tracking-wide whitespace-nowrap">
+							<span className="relative z-50 text-white" style={{
+								textShadow: `
+									-3px -3px 0 #739E71,  
+									3px -3px 0 #739E71,
+									-3px 3px 0 #739E71,
+									3px 3px 0 #739E71,
+									-4px 0 0 #739E71,
+									4px 0 0 #739E71,
+									0 -4px 0 #739E71,
+									0 4px 0 #739E71,
+									2px 2px 5px rgba(0,0,0,0.5)
+								`
+							}}>Founders Grove</span>
 						</div>
-						<span className="text-lg sm:text-xl md:text-2xl font-arial font-semibold font-heading text-background truncate">
-							Founders Grove
-						</span>
 					</a>
 				</div>
 				<div className="navbar-end hidden lg:flex">
