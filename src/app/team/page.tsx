@@ -1,5 +1,5 @@
 import TeamCard from "../components/teamCard";
-import { teamMembers } from "./teamConfig";
+import { teamMembers } from "../../config/teamConfig";
 
 export default function OurTeam() {
 	return (
