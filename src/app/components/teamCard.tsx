@@ -16,16 +16,16 @@ export default function TeamCard({
 	linkedIn,
 }: TeamCardProps) {
 	return (
-		<div className="flex flex-col md:flex-row items-center bg-foreground/20 rounded-xl p-6 backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-xl transition-all duration-300 text-background text-center md:text-left lg:max-w-3xl mx-auto">
+		<div className="mb-8 flex flex-col md:flex-row items-center bg-foreground/20 rounded-xl p-6 backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-xl transition-all duration-300 text-background text-center md:text-left lg:max-w-3xl mx-auto">
 			<img
 				src={`${img}`}
 				alt={`${name}`}
 				className="aspect-square md:w-1/2 rounded-full object-cover"
 			/>
 			<div className="mt-4 md:mt-0 md:ml-6">
-				<h2 className="text-2xl font-semibold">{name}</h2>
-				<h3 className="italic text-lg text-gray-300">{title}</h3>
-				<p className="mt-2 text-lg font-medium">{bio}</p>
+				<h2 className="text-2xl md:text-4xl font-semibold">{name}</h2>
+				<h3 className="italic text-md md:text-l text-gray-300">{title}</h3>
+				<p className="mt-2 text-md md:text-l font-medium">{bio}</p>
 				<div className="flex md:justify-end justify-center gap-4 mt-4">
 					<a href={gitLink} className="flex flex-row items-center my-auto">
 						<svg

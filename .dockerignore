@@ -1,0 +1,49 @@
+# Node modules and dependencies
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Next.js build output
+.next
+out
+
+# Development files
+.git
+.github
+.vscode
+*.md
+*.log
+
+# Testing files
+coverage
+.nyc_output
+__tests__
+test
+tests
+
+# Environment files (be careful not to exclude files needed for build)
+.env*.local
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large media files (if applicable)
+public/videos
+*.mp4
+*.mov
+*.webm
+
+# Temporary files
+tmp
+temp
+.cache 

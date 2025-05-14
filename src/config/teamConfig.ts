@@ -10,25 +10,25 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
   {
     name: "Dayne Jones",
-    bio: "Founder of Founders Grove, and my uncle. Cool guy, just had twins. Codes in his sleep.",
+    bio: "Founder of Founders Grove, just had twins. Codes in his sleep. Sacramento, CA.",
     img: "/imgs/DayneJones.jpeg",
-    title: "CEO | Senior Developer",
+    title: "Founder | Architect | Product Designer",
     gitLink: "https://github.com/daynejones",
     linkedIn: "https://www.linkedin.com/in/daynejones/"
   },
   {
     name: "Sam McDonald",
-    bio: "The Coolest guy with lots of awesome ideas to build.",
+    bio: "The guy who has more ideas to build than time to build them. Charlotte, NC.",
     img: "/imgs/SamMcDonald.jpg",
-    title: "Genius | Junior Developer",
+    title: "Apprentice | Web Developer | Designer",
     gitLink: "https://github.com/sammcdonald-dev",
     linkedIn: "https://www.linkedin.com/in/sam-mcdonald-42b2761a3/"
   },
   {
     name: "Jordan Rhodes",
-    bio: "Senior React Engineer with expertise in JavaScript and Rust development. Full-stack application developer from Tampa, FL.",
+    bio: "Full-stack application developer and entrepreneur. Tampa, FL.",
     img: "/imgs/jordan.png",
-    title: "Senior React Engineer",
+    title: "Senior Engineer | Entrepreneur",
     gitLink: "https://github.com/jsrhodes15",
     linkedIn: "https://www.linkedin.com/in/jsrhodes15/"
   }

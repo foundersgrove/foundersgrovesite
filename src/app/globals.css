@@ -1,3 +1,4 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -42,6 +43,10 @@
 		--foreground: #ededed;
 	}
 } */
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	/* min-height: 100vh; */
@@ -177,7 +182,6 @@ section {
 .life {
 	opacity: 1;
 	font-family: "Work Sans", sans-serif;
-	margin: 0 auto auto auto;
 	background: linear-gradient(
 		to right,
 		#506d4f,
@@ -192,14 +196,13 @@ section {
 	);
 	background-size: 100%;
 	background-position: 0 0;
-	text-align: center;
 	font-weight: 1000;
-	font-size: 90px;
-	width: 100%;
+	font-size: 30px;
+	width: auto;
+	display: inline;
 	white-space: nowrap;
 
 	@media screen and (max-width: 768px) {
-		width: 100%;
 		font-size: 50px;
 	}
 	background-clip: text;
@@ -290,7 +293,6 @@ section {
 		opacity: 1;
 	}
 }
-
 @keyframes typing {
 	0%,
 	1% {
@@ -537,6 +539,7 @@ section {
 .typewriter::before {
 	content: "";
 	animation: typing 13.5s forwards;
+	/* text-shadow: 0 0 1px var(--foreground); */
 }
 
 .typewriter::after {
@@ -577,4 +580,49 @@ section {
 		content: "developer";
 		animation: sequencePopup 12s linear forwards;
 	}
+}
+
+.navbar-logo {
+	font-family: 'Satoshi', Arial, sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	line-height: 1.1;
+	color: #fff;
+	background: none;
+	border: none;
+	padding: 0.1em 0.3em;
+	position: relative;
+	display: inline-block;
+}
+
+.custom-f {
+	display: inline-block;
+	width: 1.1em;
+	height: 1em;
+	position: relative;
+	vertical-align: middle;
+	margin-right: 0.05em;
+}
+.custom-f::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0.38em;
+	height: 1em;
+	background: #fff;
+	border-radius: 0.04em;
+}
+.custom-f::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0.38em;
+	top: 0;
+	width: 0.7em;
+	height: 0.32em;
+	background: #fff;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+	border-radius: 0.04em;
 }

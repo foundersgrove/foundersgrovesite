@@ -1,7 +1,10 @@
 "use client";
 import HomeCard from "./components/homeCard";
-import { homeCards } from "@/config/homeCards";
 import TitleCard from "./components/titleCard";
+import Projects from "./components/Projects";
+import TeamCard from "./components/teamCard";
+import ContactButton from "./components/ContactButton";
+import { teamMembers } from "../config/teamConfig";
 
 export default function Home() {
 	return (
@@ -10,18 +13,62 @@ export default function Home() {
 			<div className="back absolute inset-0 bg-[url('/imgs/RedwoodBackground.jpg')] bg-cover bg-center bg-no-repeat"></div>
 
 			{/* Main Content */}
-			<div className="relative z-10 flex-grow pt-24">
-				<div className="mx-8 flex flex-col gap-48 sm:gap-96 py-50">
-					<TitleCard />
-					{homeCards.map((card, index) => (
-						<HomeCard
-							key={index}
-							title={card.title}
-							description={card.description}
-							btn={card.btn}
-							btnLink={card.btnLink}
-						/>
-					))}
+			<div className="relative z-10 flex-grow px-8">
+				<div className="gap-16 mt-36 max-w-4xl mx-auto flex flex-col font-arial text-background bg-foreground/20 
+					rounded-xl p-16 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black 
+					transition-all duration-300">
+					{/* <TitleCard /> */}
+					<h1 className="text-4xl md:text-6xl font-arial font-semibold mb-4">Founders X Grove</h1>
+					<div>
+						<h2 className="text-2xl md:text-4xl font-arial font-semibold mb-4">
+							Founders Grove is a team of developers, designers, and entrepreneurs building successful businesses.
+						</h2>
+						<p className="text-md md:text-xl font-normal font-arial">Our secret sauce is 20+ years of experience in product development, software engineering, and business operations across enterprise and startup environments.</p>
+					</div>
+
+					<div>
+						<h2 className="text-2xl md:text-4xl font-arial font-semibold mb-4">
+							That problem you're facing? We've seen it before.
+						</h2>
+					</div>
+
+					<div className="flex justify-center">
+						<ContactButton buttonText="Let's Talk" size="small" className="max-w-md mx-auto" />
+					</div>
+
+
+					{/* <div>
+						<h2 className="text-3xl text-center font-arial font-semibold mb-4">
+							We build software that lasts.
+						</h2>
+						<p className="text-xl font-normal font-arial mx-6">We're not just building software, we're building businesses.</p>
+					</div> */}
+
+					<h1 id="work" className="pt-8 font-bold sm:text-2xl text-4xl md:text-6xl font-arial text-white">
+						Recent Projects
+					</h1>
+					<Projects />
+					<div className="grid mx-2 md:mx-auto">
+						<div>
+							<h1
+								id="team"
+								className="font-bold sm:text-2xl text-4xl md:text-6xl font-arial text-white p-4"
+							>
+								Our Team
+							</h1>
+						</div>
+						{teamMembers.map((member, index) => (
+							<TeamCard
+								key={index}
+								name={member.name}
+								bio={member.bio}
+								img={member.img}
+								title={member.title}
+								gitLink={member.gitLink}
+								linkedIn={member.linkedIn}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>

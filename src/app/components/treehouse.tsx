@@ -1,14 +1,10 @@
 export default function Treehouse() {
 	return (
-		<div
-			className="space-y-4 font-arial dark:text-white text-background bg-foreground/20 p-8
-					rounded-xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black 
-					transition-all duration-300 z-20"
-		>
-			<div className="flex gap-8 flex-col p-4">
+		<div className="space-y-4 font-arial dark:text-white z-20">
+			<div className="flex gap-8 flex-col">
 				<div className="flex flex-col h-full gap-6">
 					<h2 className="text-4xl font-semibold text-left">
-						Treehouse Schoolhouse
+						Treehouse Schoolhouse: Homeschool 101
 					</h2>
 					<div className="flex object-cover w-full h-[265px] md:h-[365px]">
 						<iframe
@@ -18,18 +14,13 @@ export default function Treehouse() {
 						/>
 					</div>
 					<p className="text-lg">
-						Founders Grove took on the redesign and rebuild of the Treehouse
-						Schoolhouse blog, a homeschool blog that already had great traffic.
-						The project increased marketing capabilities and improved the
-						overall user experience while allowing the Treehouse team to see
-						more data with google analytics integration that wasn't possible
-						before. This project utilized a headless wordpress backend and had
-						to be rerouted to take over the preexisting shopify blog.
+						Treehouse Schoolhouse had a great ecommerce presence but their Shopify blog was not performing well.
+						Founders Grove redesigned the blog to be more engaging and user-friendly, while adding functionality to drive traffic to the shop.
 					</p> 
 					<h3 className="text-2xl font-semibold text-left">Ask us how we:</h3>
-					<ul className="space-y-5 text-lg">
+					<ul className="space-y-5 text-lg list-disc list-inside">
 						<li>
-							Seamlessly integrated an existing shopify ecommerce site with a headless wordpress blog.
+							Weaved a shopify site seamlessly together with a headless wordpress blog.
 						</li>
 						<li>
 							Leveraged NextJS and Wordpress to create custom content experiences.

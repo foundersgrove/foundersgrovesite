@@ -1,11 +1,7 @@
 export default function Bengine({}) {
 	return (
-		<div
-			className="space-y-4 font-arial dark:text-white text-background bg-foreground/20 p-8
-					rounded-xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black 
-					transition-all duration-300 z-20"
-		>
-			<div className="flex gap-8 flex-col p-4">
+		<div className="space-y-4 font-arial dark:text-white z-20">
+			<div className="flex gap-8 flex-col">
 				<div className="flex flex-col h-full space-y-6">
 					<h2 className="text-4xl font-semibold text-left">
 						Bengine: The Doordash for Mechanics
@@ -18,16 +14,13 @@ export default function Bengine({}) {
 						/>
 					</div>
 					<p className="text-lg">
-						Bengine is a startup that connects mechanics with
-						autoparts stores and drivers who are able to deliver parts. Founders
-						Grove was responsible for developing the project, which included
-						building a custom ordering system, payment processing, and a
-						user-friendly interface.
+						Bengine connects mechanics with autoparts stores and drivers to deliver parts in record time.
+						Founders Grove developed a custom ordering system, payment processing, and a user-friendly interface.
 					</p>
 					<h3 className="text-2xl font-semibold text-left">Ask us how we:</h3>
-					<ul className="space-y-5 text-lg">
+					<ul className="space-y-5 text-lg list-disc list-inside">
 						<li>
-							Built an entire startup in a couple months
+							Went from ideas to an entire product in a couple months
 						</li>
 						<li>
 							Integrated a custom API to coordinate vehicle filtered parts search

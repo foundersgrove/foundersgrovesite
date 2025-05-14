@@ -14,32 +14,17 @@ export default function NavBar({}) {
 					</div>
 				</div>
 			</nav> */}
-			<div className="navbar absolute top-0 left-0 w-full z-50 bg-transparent">
+			<div className="navbar absolute top-0 left-0 w-full z-50 bg-foreground/20 backdrop-blur-lg shadow-xl">
 				<div className="navbar-start flex-1">
 					<a
 						className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-2 transition-colors min-w-0"
 						href="/"
 						aria-label="Founders Grove Logo and Homepage Link"
 					>
-						<div className="relative inline-block font-extrabold text-6xl sm:text-xl md:text-6xl tracking-wide whitespace-nowrap">
-							<span
-								className="relative z-50 text-white"
-								style={{
-									textShadow: `
-									-3px -3px 0 #739E71,  
-									3px -3px 0 #739E71,
-									-3px 3px 0 #739E71,
-									3px 3px 0 #739E71,
-									-4px 0 0 #739E71,
-									4px 0 0 #739E71,
-									0 -4px 0 #739E71,
-									0 4px 0 #739E71,
-									2px 2px 5px rgba(0,0,0,0.5)
-								`,
-								}}
-							>
-								Founders Grove
-							</span>
+						<div className="flex items-center text-l whitespace-nowrap">
+							<span className="relative z-50 text-white navbar-logo">Founder's</span>
+							<span className="text-white text-2xl px-2">X</span>
+							<span className="relative z-50 text-white navbar-logo">Grove</span>
 						</div>
 					</a>
 				</div>
@@ -48,7 +33,7 @@ export default function NavBar({}) {
 						<div
 							tabIndex={0}
 							role="button"
-							className="btn btn-ghost lg:hidden text-background hover:bg-white/10"
+							className="btn btn-ghost md:hidden text-background hover:bg-white/10"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +41,7 @@ export default function NavBar({}) {
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
+								transform="scale(-1,1)"
 							>
 								<path
 									strokeLinecap="round"
@@ -67,7 +53,7 @@ export default function NavBar({}) {
 						</div>
 						<ul
 							tabIndex={0}
-							className="menu menu-md dropdown-left dropdown-content mt-10 -mr-14 z-[1] p-2 shadow-lg bg-black/80 backdrop-blur-md rounded-box w-52"
+							className="menu menu-md dropdown-left dropdown-content mt-14 -mr-14 z-[1] p-2 shadow-lg bg-black/80 backdrop-blur-md rounded-box w-52"
 						>
 							<li>
 								<a className="text-white hover:text-white/80" href="/">
@@ -75,19 +61,22 @@ export default function NavBar({}) {
 								</a>
 							</li>
 							<li>
-								<a className="text-white hover:text-white/80" href="work">
-									Our Work
+								<a className="text-white hover:text-white/80" href="#work">
+									Recent Projects
 								</a>
 							</li>
 							<li>
-								<a className="text-white hover:text-white/80" href="team">
+								<a className="text-white hover:text-white/80" href="#team">
 									Our Team
 								</a>
+							</li>
+							<li>
+								<a className="text-white hover:text-white/80" href="#contact">Contact Us</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div className="navbar-end hidden lg:flex">
+				<div className="navbar-end hidden md:flex">
 					<ul className="menu menu-horizontal px-1 text-background text-sm font-medium tracking-wide">
 						<li>
 							<a className="hover:bg-foreground/10" href="/">
@@ -95,14 +84,17 @@ export default function NavBar({}) {
 							</a>
 						</li>
 						<li>
-							<a className="hover:bg-foreground/10" href="work">
-								Our Work
+							<a className="hover:bg-foreground/10" href="#work">
+								Recent Projects
 							</a>
 						</li>
 						<li>
-							<a className="hover:bg-foreground/10" href="team">
+							<a className="hover:bg-foreground/10" href="#team">
 								Our Team
 							</a>
+						</li>
+						<li>
+							<a className="hover:bg-foreground/10" href="#contact">Contact Us</a>
 						</li>
 					</ul>
 				</div>

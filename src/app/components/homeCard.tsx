@@ -14,11 +14,7 @@ export default function HomeCard({
 	onClick,
 }: HomeCardProps) {
 	return (
-		<div
-			className="homecard max-w-2xl font-arial mx-auto text-background bg-foreground/20 
-						rounded-xl p-10 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black 
-						transition-all duration-300 text-center"
-		>
+		<div>
 			<h2 className="text-3xl text-center font-arial font-semibold mb-4">
 				{title}
 			</h2>

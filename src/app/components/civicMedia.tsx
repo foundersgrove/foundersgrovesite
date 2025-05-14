@@ -1,11 +1,7 @@
 export default function CivicMedia({}) {
 	return (
-		<div
-			className="space-y-4 font-arial dark:text-white text-background bg-foreground/20 p-8
-					rounded-xl backdrop-filter backdrop-blur-lg shadow-xl shadow-black/50 hover:shadow-black 
-					transition-all duration-300 z-20"
-		>
-			<div className="flex gap-6 flex-col p-4">
+		<div className="space-y-4 font-arial dark:text-white z-20">
+			<div className="flex gap-6 flex-col">
 				<div className="flex flex-col h-full space-y-6">
 					<h2 className="text-4xl font-semibold text-left">
 						Civic Media: A State-Wide Radio Network
@@ -20,12 +16,11 @@ export default function CivicMedia({}) {
 				</div>
 					
 					<p className="text-lg">
-						As the technology partner for Civic Media, Founders Grove designed a custom media platform that powers over 20+ radio stations across Wisconsin.
-						Using Wordpress as a headless CMS with a custom NextJS frontend, we built a multi-site setup that allows for easy content management and distribution.
+						Civic Media's news covers the state of Wisconsin. As the technology partner for Civic Media, Founders Grove designed a custom media platform that powers their 20+ radio stations.
 					</p>
 					
 					<h3 className="text-2xl font-semibold text-left">Ask us how we:</h3>
-					<ul className="space-y-4 text-lg">
+					<ul className="space-y-4 text-lg list-disc list-inside">
 						<li>
 							Used NextJS, Wordpress, and Terraform to deploy 20+ cutting-edge sites from the same codebase.
 						</li>
