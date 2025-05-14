@@ -1,7 +1,7 @@
 export default function TitleCard({}) {
 	return (
 		<div
-			className="homecard max-w-3xl w-full h-full font-arial mx-auto text-background bg-foreground/20 
+			className="max-w-3xl w-full h-full font-arial mx-auto text-background bg-foreground/20 
 						rounded-xl p-10 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black 
 						transition-all duration-300"
 		>

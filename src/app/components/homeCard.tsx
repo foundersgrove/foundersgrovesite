@@ -15,7 +15,7 @@ export default function HomeCard({
 }: HomeCardProps) {
 	return (
 		<div
-			className="homecard max-w-2xl font-arial mx-auto text-background bg-foreground/20 
+			className=" max-w-3xl font-arial mx-auto text-background bg-foreground/20 
 						rounded-xl p-10 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black 
 						transition-all duration-300 text-center"
 		>
