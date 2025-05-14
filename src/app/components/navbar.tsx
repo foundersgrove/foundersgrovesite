@@ -22,8 +22,10 @@ export default function NavBar({}) {
 						aria-label="Founders Grove Logo and Homepage Link"
 					>
 						<div className="relative inline-block font-extrabold text-6xl sm:text-xl md:text-6xl tracking-wide whitespace-nowrap">
-							<span className="relative z-50 text-white" style={{
-								textShadow: `
+							<span
+								className="relative z-50 text-white"
+								style={{
+									textShadow: `
 									-3px -3px 0 #739E71,  
 									3px -3px 0 #739E71,
 									-3px 3px 0 #739E71,
@@ -33,17 +35,20 @@ export default function NavBar({}) {
 									0 -4px 0 #739E71,
 									0 4px 0 #739E71,
 									2px 2px 5px rgba(0,0,0,0.5)
-								`
-							}}>Founders Grove</span>
+								`,
+								}}
+							>
+								Founders Grove
+							</span>
 						</div>
 					</a>
 				</div>
 				<div className="navbar-end flex-1">
-					<div className="dropdown">
+					<div className="dropdown dropdown-left">
 						<div
 							tabIndex={0}
 							role="button"
-							className="btn btn-ghost lg:hidden text-background hover:bg-white/10 mr-1"
+							className="btn btn-ghost lg:hidden text-background hover:bg-white/10"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +67,7 @@ export default function NavBar({}) {
 						</div>
 						<ul
 							tabIndex={0}
-							className="menu menu-md dropdown-content mt-3 z-[1] p-2 shadow-lg bg-black/80 backdrop-blur-md rounded-box w-52"
+							className="menu menu-md dropdown-left dropdown-content mt-10 -mr-14 z-[1] p-2 shadow-lg bg-black/80 backdrop-blur-md rounded-box w-52"
 						>
 							<li>
 								<a className="text-white hover:text-white/80" href="/">
