@@ -23,7 +23,7 @@ export default function Home() {
 						<h2 className="text-2xl md:text-4xl font-arial font-semibold mb-4">
 							Founders Grove is a team of developers, designers, and entrepreneurs building successful businesses.
 						</h2>
-						<p className="text-md md:text-xl font-normal font-arial">Our secret sauce is 20+ years of experience in product development, software engineering, and business operations across enterprise and startup environments.</p>
+						<p className="text-md md:text-xl font-normal font-arial">Our secret is 20+ years of experience in product development, software engineering, and business operations across enterprise and startup environments.</p>
 					</div>
 
 					<div>
