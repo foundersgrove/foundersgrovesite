@@ -32,7 +32,7 @@ export default function ProjectCard({
 		<div className="space-y-4 font-arial dark:text-white z-20">
 			<div className="flex gap-8 flex-col">
 				<div className="flex flex-col h-full space-y-6">
-					<h2 className="text-2xl md:text-4xl font-semibold text-left">
+					<h2 className="text-l md:text-2xl  font-semibold text-left">
 						{title}
 					</h2>
 					{/* 
@@ -62,12 +62,19 @@ export default function ProjectCard({
 
 					<p className="text-md md:text-l">{description}</p>
 
-					<h3 className="text-l md:text-2xl font-semibold text-left">
+					<h3 className="text-l md:text-2xl font-semibold text-left mb-4">
 						Ask us how we:
 					</h3>
-					<ul className="space-y-5 text-md md:text-l list-disc list-inside">
+					<ul className="space-y-3 text-md md:text-l">
 						{features.map((feature, index) => (
-							<li key={index}>{feature.text}</li>
+							<li key={index} className="flex items-start">
+								<span className="inline-flex items-center justify-center h-6 w-6 rounded-full mr-3 flex-shrink-0">
+									<svg className="w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+										<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7"/>
+									</svg>
+								</span>
+								<span className="font-medium">{feature.text}</span>
+							</li>
 						))}
 					</ul>
 				</div>

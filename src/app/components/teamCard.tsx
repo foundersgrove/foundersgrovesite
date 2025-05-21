@@ -20,7 +20,7 @@ export default function TeamCard({
 			<img
 				src={`${img}`}
 				alt={`${name}`}
-				className="aspect-square md:w-1/2 rounded-full object-cover"
+				className="aspect-square w-1/2 md:w-1/2 rounded-full object-cover"
 			/>
 			<div className="mt-4 md:mt-0 md:ml-6">
 				<h2 className="text-2xl md:text-4xl font-semibold">{name}</h2>

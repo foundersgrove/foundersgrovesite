@@ -23,7 +23,7 @@ export default function NavBar({}) {
 					>
 						<div className="flex items-center text-l whitespace-nowrap">
 							<span className="relative z-50 text-white navbar-logo">
-								Founder's
+								Founders
 							</span>
 							<span className="text-white text-2xl px-2">X</span>
 							<span className="relative z-50 text-white navbar-logo">

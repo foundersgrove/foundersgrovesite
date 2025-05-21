@@ -76,7 +76,13 @@ const projectsData = [
 
 export default function Projects() {
 	return (
-		<div className="space-y-24">
+		<div className="space-y-12 md:space-y-24">
+            <h1
+                id="work"
+                className="mt-4 mb-4 md:mb-8 font-bold sm:text-2xl text-4xl md:text-6xl font-arial text-white"
+            >
+                Recent Projects
+            </h1>
 			{projectsData.map((project, index) => (
 				<ProjectCard
 					key={index}

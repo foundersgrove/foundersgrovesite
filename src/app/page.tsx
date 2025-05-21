@@ -36,9 +36,16 @@ export default function Home() {
 					transition-all duration-300"
 				>
 					{/* <TitleCard /> */}
-					<h1 className="text-4xl md:text-6xl font-arial font-semibold mb-4">
-						Founders X Grove
-					</h1>
+					<div>
+						<h1 className="text-4xl md:text-6xl font-arial font-semibold mb-0">
+							Founders Grove
+						</h1>
+						<div className="text-2xl md:text-3xl pt-0">
+							<span className=" font-semibold text-background font-arial">
+								We build <span className="typewriter thick text-[#739E71] animate-shimmer"></span>
+							</span>
+						</div>
+					</div>
 					<div>
 						<h2 className="text-2xl md:text-4xl font-arial font-semibold mb-4">
 							Founders Grove is a team of developers, designers, and
@@ -55,6 +62,11 @@ export default function Home() {
 						<h2 className="text-2xl md:text-4xl font-arial font-semibold mb-4">
 							That problem you're facing? We've seen it before.
 						</h2>
+						<p className="text-md md:text-xl font-normal font-arial">
+							Our secret is 20+ years of experience in product development,
+							software engineering, and business operations across enterprise
+							and startup environments.
+						</p>
 					</div>
 
 					<div className="flex justify-center">
@@ -71,18 +83,7 @@ export default function Home() {
 						</h2>
 						<p className="text-xl font-normal font-arial mx-6">We're not just building software, we're building businesses.</p>
 					</div> */}
-					<div className="text-2xl md:text-3xl pt-10">
-						<span className=" font-semibold text-background font-arial">
-							We build <span className="typewriter thick text-[#739E71]"></span>
-						</span>
-					</div>
 
-					<h1
-						id="work"
-						className="pt-8 font-bold sm:text-2xl text-4xl md:text-6xl font-arial text-white"
-					>
-						Recent Projects
-					</h1>
 
 					<Projects />
 					<div className="grid mx-2 md:mx-auto">
