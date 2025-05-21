@@ -1,12 +1,28 @@
 "use client";
-import HomeCard from "./components/homeCard";
-import TitleCard from "./components/titleCard";
 import Projects from "./components/Projects";
 import TeamCard from "./components/teamCard";
 import ContactButton from "./components/ContactButton";
 import { teamMembers } from "../config/teamConfig";
+import { useEffect } from "react";
 
 export default function Home() {
+	useEffect(() => {
+		const element = document.querySelector(".typewriter");
+
+		if (!element) return;
+
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) {
+					element.classList.add("play");
+					observer.disconnect(); // Optional: only play once
+				}
+			},
+			{ threshold: 0.1 }
+		);
+
+		observer.observe(element);
+	}, []);
 	return (
 		<div className="relative flex flex-col min-h-screen">
 			{/* Background Image */}
@@ -14,16 +30,25 @@ export default function Home() {
 
 			{/* Main Content */}
 			<div className="relative z-10 flex-grow px-4 md:px-8">
-				<div className="gap-8 md:gap-16 mt-24 md:mt-36 max-w-4xl mx-auto flex flex-col font-arial text-background bg-foreground/20 
+				<div
+					className="gap-8 md:gap-16 mt-24 md:mt-36 max-w-4xl mx-auto flex flex-col font-arial text-background bg-foreground/20 
 					rounded-xl p-8 md:p-16 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black 
-					transition-all duration-300">
+					transition-all duration-300"
+				>
 					{/* <TitleCard /> */}
-					<h1 className="text-4xl md:text-6xl font-arial font-semibold mb-4">Founders X Grove</h1>
+					<h1 className="text-4xl md:text-6xl font-arial font-semibold mb-4">
+						Founders X Grove
+					</h1>
 					<div>
 						<h2 className="text-2xl md:text-4xl font-arial font-semibold mb-4">
-							Founders Grove is a team of developers, designers, and entrepreneurs building successful businesses.
+							Founders Grove is a team of developers, designers, and
+							entrepreneurs building successful businesses.
 						</h2>
-						<p className="text-md md:text-xl font-normal font-arial">Our secret is 20+ years of experience in product development, software engineering, and business operations across enterprise and startup environments.</p>
+						<p className="text-md md:text-xl font-normal font-arial">
+							Our secret is 20+ years of experience in product development,
+							software engineering, and business operations across enterprise
+							and startup environments.
+						</p>
 					</div>
 
 					<div>
@@ -33,9 +58,12 @@ export default function Home() {
 					</div>
 
 					<div className="flex justify-center">
-						<ContactButton buttonText="Let's Talk" size="small" className="max-w-md mx-auto" />
+						<ContactButton
+							buttonText="Let's Talk"
+							size="small"
+							className="max-w-md mx-auto"
+						/>
 					</div>
-
 
 					{/* <div>
 						<h2 className="text-3xl text-center font-arial font-semibold mb-4">
@@ -43,10 +71,19 @@ export default function Home() {
 						</h2>
 						<p className="text-xl font-normal font-arial mx-6">We're not just building software, we're building businesses.</p>
 					</div> */}
+					<div className="text-2xl md:text-3xl pt-10">
+						<span className=" font-semibold text-background font-arial">
+							We build <span className="typewriter thick text-[#739E71]"></span>
+						</span>
+					</div>
 
-					<h1 id="work" className="pt-8 font-bold sm:text-2xl text-4xl md:text-6xl font-arial text-white">
+					<h1
+						id="work"
+						className="pt-8 font-bold sm:text-2xl text-4xl md:text-6xl font-arial text-white"
+					>
 						Recent Projects
 					</h1>
+
 					<Projects />
 					<div className="grid mx-2 md:mx-auto">
 						<div>

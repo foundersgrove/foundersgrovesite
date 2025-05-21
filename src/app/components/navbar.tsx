@@ -22,9 +22,13 @@ export default function NavBar({}) {
 						aria-label="Founders Grove Logo and Homepage Link"
 					>
 						<div className="flex items-center text-l whitespace-nowrap">
-							<span className="relative z-50 text-white navbar-logo">Founder's</span>
+							<span className="relative z-50 text-white navbar-logo">
+								Founder's
+							</span>
 							<span className="text-white text-2xl px-2">X</span>
-							<span className="relative z-50 text-white navbar-logo">Grove</span>
+							<span className="relative z-50 text-white navbar-logo">
+								Grove
+							</span>
 						</div>
 					</a>
 				</div>
@@ -41,13 +45,12 @@ export default function NavBar({}) {
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
-								transform="scale(-1,1)"
 							>
 								<path
 									strokeLinecap="round"
 									strokeLinejoin="round"
 									strokeWidth="2"
-									d="M4 6h16M4 12h8m-8 6h16"
+									d="M20 6H4M20 12h-8M20 18H4"
 								/>
 							</svg>
 						</div>
@@ -71,7 +74,9 @@ export default function NavBar({}) {
 								</a>
 							</li>
 							<li>
-								<a className="text-white hover:text-white/80" href="#contact">Contact Us</a>
+								<a className="text-white hover:text-white/80" href="#contact">
+									Contact Us
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -94,7 +99,9 @@ export default function NavBar({}) {
 							</a>
 						</li>
 						<li>
-							<a className="hover:bg-foreground/10" href="#contact">Contact Us</a>
+							<a className="hover:bg-foreground/10" href="#contact">
+								Contact Us
+							</a>
 						</li>
 					</ul>
 				</div>
