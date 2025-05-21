@@ -12,7 +12,7 @@ type ImageCarouselProps = {
 
 export default function ImageCarousel({
 	images,
-	interval = 3000,
+	interval = 3500,
 }: ImageCarouselProps) {
 	const [current, setCurrent] = useState(0);
 
