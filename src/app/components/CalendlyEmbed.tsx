@@ -13,7 +13,7 @@ export default function CalendlyEmbed({ url }: CalendlyEmbedProps) {
 				src="https://assets.calendly.com/assets/external/widget.js"
 				strategy="lazyOnload"
 			/>
-			<div className="calendly-inline-widget w-full h-[600px]" data-url={url} />
+			<div className="calendly-inline-widget w-full h-[700px] min-h-[700px]" data-url={url} />
 		</>
 	);
 } 

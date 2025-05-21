@@ -42,7 +42,11 @@ export default function ContactButton({
 
 			<dialog id="contact_modal" className="modal" ref={modalRef}>
 				<div className="modal-box max-w-3xl w-full p-0 bg-white">
-					<CalendlyEmbed url="https://calendly.com/dayne-foundersgrove/30min?hide_event_type_details=1&hide_gdpr_banner=1" />
+					<div className="flex flex-col items-center justify-center pt-8">
+						<h2 className="text-2xl md:text-4xl text-black font-bold">Schedule a call</h2>
+						<p className="text-sm text-gray-500">or email <a href="mailto:letstalk@foundersgrove.dev" className="text-[#739E71]">letstalk@foundersgrove.dev</a></p>
+					</div>
+					<CalendlyEmbed url="https://calendly.com/dayne-foundersgrove-w6yb/30min?hide_event_type_details=1&hide_gdpr_banner=1" />
 					<form method="dialog" className="absolute right-4 top-4 z-50">
 						<button className="btn btn-sm btn-circle bg-foreground/10 hover:bg-foreground/20 border-none text-foreground">
 							✕
