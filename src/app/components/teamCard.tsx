@@ -1,3 +1,6 @@
+"use client";
+import Image from "next/image";
+
 interface TeamCardProps {
 	name: string;
 	bio: string;
@@ -17,12 +20,16 @@ export default function TeamCard({
 }: TeamCardProps) {
 	return (
 		<div className="mb-8 flex flex-col md:flex-row items-center bg-foreground/20 rounded-xl p-6 backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-xl transition-all duration-300 text-background text-center md:text-left lg:max-w-3xl mx-auto">
-			<img
-				src={`${img}`}
-				alt={`${name}`}
-				className="aspect-square w-1/2 md:w-1/2 rounded-full object-cover"
-			/>
-			<div className="mt-4 md:mt-0 md:ml-6">
+			<div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden flex-shrink-0">
+				<Image
+					src={img}
+					alt={name}
+					fill
+					className="object-cover"
+					sizes="(max-width: 768px) 160px, 192px"
+				/>
+			</div>
+			<div className="mt-4 md:mt-0 md:ml-6 flex-grow">
 				<h2 className="text-2xl md:text-4xl font-semibold">{name}</h2>
 				<h3 className="italic text-md md:text-l text-gray-300">{title}</h3>
 				<p className="mt-2 text-md md:text-l font-medium">{bio}</p>

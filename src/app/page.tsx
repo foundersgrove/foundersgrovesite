@@ -4,6 +4,7 @@ import TeamCard from "./components/teamCard";
 import ContactButton from "./components/ContactButton";
 import { teamMembers } from "../config/teamConfig";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function Home() {
 	useEffect(() => {
@@ -26,7 +27,16 @@ export default function Home() {
 	return (
 		<div className="relative flex flex-col min-h-screen">
 			{/* Background Image */}
-			<div className="back absolute inset-0 bg-[url('/imgs/RedwoodBackground.jpg')] bg-cover bg-center bg-no-repeat"></div>
+			<div className="back absolute inset-0">
+				<Image 
+					src="/imgs/RedwoodBackground.jpg"
+					alt="Redwood Background"
+					fill
+					priority
+					className="object-cover object-center"
+					quality={90}
+				/>
+			</div>
 
 			{/* Main Content */}
 			<div className="relative z-10 flex-grow px-4 md:px-8">

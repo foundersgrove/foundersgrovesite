@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 type Image = {
 	src: string;
@@ -30,14 +31,21 @@ export default function ImageCarousel({
 		<>
 			<div className="relative w-full h-54 lg:h-[540px] sm:h-96 md:h-96 mx-auto overflow-hidden rounded-lg">
 				{images.map((img, index) => (
-					<img
+					<div
 						key={index}
-						src={img.src}
-						alt={img.alt}
-						className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+						className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
 							index === current ? "opacity-100" : "opacity-0"
 						}`}
-					/>
+					>
+						<Image
+							src={img.src}
+							alt={img.alt}
+							fill
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							className="object-cover"
+							priority={index === 0}
+						/>
+					</div>
 				))}
 			</div>
 			<div className="gap-2 flex -mt-3 justify-center">
