@@ -20,7 +20,7 @@ export default function Footer({}) {
 						<ContactButton size="large" />
 					</div>
 					<div className="text-center font-bold">
-						&copy; {currentYear} Founders X Grove
+						&copy; {currentYear} Founders Grove, LLC
 					</div>
 				</div>
 			</footer>
