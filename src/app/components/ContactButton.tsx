@@ -23,7 +23,7 @@ export default function ContactButton({
 
 	const textSizeClasses = {
 		small: "text-l md:text-2xl",
-		large: "text-4xl md:text-6xl"
+		large: "text-3xl md:text-4xl"
 	};
 
 	const buttonSize = sizeClasses[size as keyof typeof sizeClasses] || sizeClasses.large;
@@ -32,10 +32,21 @@ export default function ContactButton({
 	return (
 		<>
 			<div
-				className={`${buttonSize} bg-[#739E71] hover:bg-[#557A53] text-white rounded-xl cursor-pointer transition-all duration-150 text-center shadow-[8px_8px_0px_0px_#557A53] hover:shadow-[12px_12px_0px_0px_#3C5A3A] hover:translate-x-[-4px] hover:translate-y-[-4px] ${className}`}
+				className={`
+					${buttonSize}
+					bg-gradient-to-r from-[#739E71] to-[#557a54]
+					text-white
+					rounded-md
+					cursor-pointer
+					text-center
+					transform
+					transition-all duration-200 ease-in-out
+					translate-y-[-4px]
+					${className}
+				`}
 				onClick={handleClick}
 			>
-				<span className={`${textSize} leading-none font-heading font-black tracking-wide`}>
+				<span className={`${textSize} leading-none font-heading font-black tracking-wide`} style={{ fontFamily: "var(--font-heading)" }}>
 					{buttonText}
 				</span>
 			</div>
