@@ -62,11 +62,11 @@ export default function Home() {
 						<h2 className="text-2xl md:text-4xl font-arial font-semibold mb-4">
 							That problem you're facing? We've seen it before.
 						</h2>
-						<p className="text-md md:text-xl font-normal font-arial">
+						{/* <p className="text-md md:text-xl font-normal font-arial">
 							Our secret is 20+ years of experience in product development,
 							software engineering, and business operations across enterprise
 							and startup environments.
-						</p>
+						</p> */}
 					</div>
 
 					<div className="flex justify-center">

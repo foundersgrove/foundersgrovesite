@@ -14,6 +14,7 @@ const projectsData = [
 			{ src: "/imgs/CM-Map.png", alt: "Civic Media Image 3" },
 		],
 		imageTitle: "civic media",
+		tags: ["Headless WordPress", "NextJS", "Terraform"],
 		features: [
 			{
 				text: "Used NextJS, Wordpress, and Terraform to deploy 20+ cutting-edge sites from the same codebase.",
@@ -37,6 +38,7 @@ const projectsData = [
 			{ src: "/imgs/BengineLogin.png", alt: "Bengine Login" },
 		],
 		imageTitle: "Bengine",
+		tags: ["Stripe", "Remix"],
 		features: [
 			{
 				text: "Went from ideas to an entire product in a couple months.",
@@ -60,6 +62,7 @@ const projectsData = [
 			{ src: "/imgs/TH-Quiz.png", alt: "Treehouse Schoolhouse Image 3" },
 		],
 		imageTitle: "Treehouse Schoolhouse Blog",
+		tags: ["Shopify", "NextJS", "Headless WordPress"],
 		features: [
 			{
 				text: "Seamlessly integrated an existing shopify ecommerce site with a headless wordpress blog.",
@@ -96,6 +99,7 @@ export default function Projects() {
 					]}
 					imageTitle={project.imageTitle}
 					features={project.features}
+					tags={project.tags}
 				/>
 			))}
 		</div>
