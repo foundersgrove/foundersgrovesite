@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/globalFooter";
 import Script from "next/script";
+import Image from "next/image";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -40,17 +41,32 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`${inter.variable} ${outfit.variable} ${plusJakarta.variable} ${workSans.variable}`}>
+		<html
+			lang="en"
+			className={`${inter.variable} ${outfit.variable} ${plusJakarta.variable} ${workSans.variable}`}
+		>
 			<body className="antialiased">
-				<div className="wrapper">
-					<NavBar />
-					{children}
-					<Footer />
+				<div className="relative flex flex-col min-h-screen">
+					{/* Background Image */}
+					<div className="back absolute inset-0">
+						<Image
+							src="/imgs/RedwoodBackground.jpg"
+							alt="Redwood Background"
+							fill
+							priority
+							className="object-cover object-center"
+							quality={90}
+						/>
+					</div>
+						<NavBar />
+						{children}
+						<Footer />
 				</div>
-				<Script 
-					src="/analytics.js" 
-					data-website-id="2604fdad-e02c-478d-a665-4aa6bdae2618" 
+				<Script
+					src="/analytics.js"
+					data-website-id="2604fdad-e02c-478d-a665-4aa6bdae2618"
 				/>
+
 			</body>
 		</html>
 	);

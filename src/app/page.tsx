@@ -25,19 +25,7 @@ export default function Home() {
 		observer.observe(element);
 	}, []);
 	return (
-		<div className="relative flex flex-col min-h-screen">
-			{/* Background Image */}
-			<div className="back absolute inset-0">
-				<Image 
-					src="/imgs/RedwoodBackground.jpg"
-					alt="Redwood Background"
-					fill
-					priority
-					className="object-cover object-center"
-					quality={90}
-				/>
-			</div>
-
+		<div>
 			{/* Main Content */}
 			<div className="relative z-10 flex-grow px-4 md:px-8">
 				<div
