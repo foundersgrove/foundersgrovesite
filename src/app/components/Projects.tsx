@@ -34,7 +34,7 @@ const projectsData = [
 		imageSrc: "/Bengine.pdf#toolbar=0&navpanes=0",
 		images: [
 			{ src: "/imgs/BengineHome.png", alt: "Bengine Home" },
-			{ src: "/imgs/BengineCheckout.png", alt: "Bengine Checkout" },
+			{ src: "/imgs/BengineMenu.png", alt: "Bengine Menu" },
 			{ src: "/imgs/BengineLogin.png", alt: "Bengine Login" },
 		],
 		imageTitle: "Bengine",

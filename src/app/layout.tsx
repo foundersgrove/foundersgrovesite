@@ -46,7 +46,7 @@ export default function RootLayout({
 			className={`${inter.variable} ${outfit.variable} ${plusJakarta.variable} ${workSans.variable}`}
 		>
 			<body className="antialiased">
-				<div className="relative flex flex-col min-h-screen">
+				<div className="relative flex flex-col h-full">
 					{/* Background Image */}
 					<div className="back absolute inset-0">
 						<Image
