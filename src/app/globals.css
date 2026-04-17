@@ -1,4 +1,3 @@
-@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -45,12 +44,11 @@
 } */
 
 html {
-	scroll-behavior: smooth;
 	background: #3a4f35;
 }
 
 body {
-	overflow-y: scroll;
+	scrollbar-gutter: stable;
 	overscroll-behavior: none;
 	color: var(--foreground);
 	background: transparent;
@@ -85,6 +83,11 @@ footer {
 	bottom: 0;
 }
 
+.back {
+	will-change: transform;
+}
+
+
 @supports (animation-timeline: scroll()) {
 	.back {
 		transform-origin: center bottom;
@@ -113,12 +116,6 @@ footer {
 	text-shadow: 0 0 5px var(--background);
 }
 
-section {
-	font-size: 1rem;
-	padding: 1rem;
-	background-color: #333;
-	color: white;
-}
 
 @supports (animation-timeline: view()) {
 	.homecard {
@@ -736,7 +733,7 @@ section {
 }
 
 .navbar-logo {
-	font-family: "Satoshi", Arial, sans-serif;
+	font-family: var(--font-outfit), "Satoshi", Arial, sans-serif;
 	font-weight: 700;
 	letter-spacing: 0.18em;
 	line-height: 1.1;

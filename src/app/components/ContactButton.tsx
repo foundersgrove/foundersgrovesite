@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import CalendlyEmbed from "./CalendlyEmbed";
 
 export default function ContactButton({ 
@@ -8,8 +8,10 @@ export default function ContactButton({
 	size = "large" // "small" or "large"
 }) {
 	const modalRef = useRef<HTMLDialogElement>(null);
+	const [hasOpened, setHasOpened] = useState(false);
 
 	const handleClick = () => {
+		setHasOpened(true);
 		if (modalRef.current) {
 			modalRef.current?.showModal();
 		}
@@ -57,7 +59,7 @@ export default function ContactButton({
 						<h2 className="text-2xl md:text-4xl text-black font-bold">Schedule a call</h2>
 						<p className="text-sm text-gray-500">or email <a href="mailto:letstalk@foundersgrove.dev" className="text-[#739E71]">letstalk@foundersgrove.dev</a></p>
 					</div>
-					<CalendlyEmbed url="https://calendly.com/dayne-foundersgrove-w6yb/30min?hide_event_type_details=1&hide_gdpr_banner=1" />
+					{hasOpened && <CalendlyEmbed url="https://calendly.com/dayne-foundersgrove-w6yb/30min?hide_event_type_details=1&hide_gdpr_banner=1" />}
 					<form method="dialog" className="absolute right-4 top-4 z-50">
 						<button aria-label="Close dialog" className="btn btn-sm btn-circle bg-foreground/10 hover:bg-foreground/20 border-none text-foreground">
 							✕

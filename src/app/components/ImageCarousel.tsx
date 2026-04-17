@@ -41,7 +41,7 @@ export default function ImageCarousel({
 							src={img.src}
 							alt={img.alt}
 							fill
-							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							sizes="(max-width: 768px) calc(100vw - 96px), 768px"
 							className="object-cover"
 							priority={index === 0}
 						/>

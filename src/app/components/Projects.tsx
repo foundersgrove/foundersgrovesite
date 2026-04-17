@@ -10,7 +10,7 @@ const projectsData = [
 		images: [
 			{ src: "/imgs/CMHome.png", alt: "Civic Media Image 1" },
 			{ src: "/imgs/CMPlayer.png", alt: "Civic Media Image 2" },
-			{ src: "/imgs/CM-Map.png", alt: "Civic Media Image 3" },
+			{ src: "/imgs/CM-News.png", alt: "Civic Media News Page" },
 		],
 		imageTitle: "civic media",
 		tags: ["Headless WordPress", "NextJS", "Terraform"],
