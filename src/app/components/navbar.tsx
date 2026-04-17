@@ -33,28 +33,28 @@ export default function NavBar({}) {
 					</a>
 				</div>
 				<div className="navbar-end flex-1">
-					<div className="dropdown dropdown-left">
-						<div
+					<div className="dropdown dropdown-left active:bg-white/20">
+						<button
 							tabIndex={0}
 							role="button"
 							aria-label="Open navigation menu"
-							className="btn btn-ghost md:hidden text-background hover:bg-white/10"
+							className="btn btn-ghost md:hidden bg-transparent text-background hover:bg-white/10 active:bg-white/20"
 						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								className="h-5 w-5"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M20 6H4M20 12h-8M20 18H4"
-								/>
-							</svg>
-						</div>
+  							<svg
+  								xmlns="http://www.w3.org/2000/svg"
+  								className="h-5 w-5"
+  								fill="none"
+  								viewBox="0 0 24 24"
+  								stroke="currentColor"
+  							>
+  								<path
+  									strokeLinecap="round"
+  									strokeLinejoin="round"
+  									strokeWidth="2"
+  									d="M20 6H4M20 12h-8M20 18H4"
+  								/>
+  							</svg>
+						</button>
 						<ul
 							tabIndex={0}
 							className="menu menu-md dropdown-left dropdown-content mt-14 -mr-14 z-[1] p-2 shadow-lg bg-black/80 backdrop-blur-md rounded-box w-52"
