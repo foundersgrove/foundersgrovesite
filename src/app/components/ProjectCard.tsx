@@ -1,5 +1,3 @@
-"use client";
-
 import ImageCarousel from "./ImageCarousel";
 
 type FeatureItem = {

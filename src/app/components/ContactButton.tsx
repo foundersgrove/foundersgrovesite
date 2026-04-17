@@ -40,7 +40,7 @@ export default function ContactButton({
 					cursor-pointer
 					text-center
 					transform
-					transition-all duration-200 ease-in-out
+					transition-transform duration-200 ease-in-out
 					translate-y-[-4px]
 					${className}
 				`}
@@ -59,7 +59,7 @@ export default function ContactButton({
 					</div>
 					<CalendlyEmbed url="https://calendly.com/dayne-foundersgrove-w6yb/30min?hide_event_type_details=1&hide_gdpr_banner=1" />
 					<form method="dialog" className="absolute right-4 top-4 z-50">
-						<button className="btn btn-sm btn-circle bg-foreground/10 hover:bg-foreground/20 border-none text-foreground">
+						<button aria-label="Close dialog" className="btn btn-sm btn-circle bg-foreground/10 hover:bg-foreground/20 border-none text-foreground">
 							✕
 						</button>
 					</form>

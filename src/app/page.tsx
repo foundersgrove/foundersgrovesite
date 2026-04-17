@@ -1,37 +1,19 @@
-"use client";
 import Projects from "./components/Projects";
 import TeamCard from "./components/teamCard";
 import ContactButton from "./components/ContactButton";
+import TypewriterStarter from "./components/TypewriterStarter";
 import { teamMembers } from "../config/teamConfig";
-import { useEffect } from "react";
-import Image from "next/image";
 
 export default function Home() {
-	useEffect(() => {
-		const element = document.querySelector(".typewriter");
-
-		if (!element) return;
-
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				if (entry.isIntersecting) {
-					element.classList.add("play");
-					observer.disconnect(); // Optional: only play once
-				}
-			},
-			{ threshold: 0.1 }
-		);
-
-		observer.observe(element);
-	}, []);
 	return (
 		<div>
+			<TypewriterStarter />
 			{/* Main Content */}
 			<div className="relative z-10 flex-grow px-4 md:px-8">
 				<div
 					className="gap-8 md:gap-16 mt-24 md:mt-36 max-w-4xl mx-auto flex flex-col font-arial text-background bg-foreground/20 
-					rounded-xl p-8 md:p-16 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black 
-					transition-all duration-300"
+					rounded-xl p-8 md:p-16 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black
+					transition-shadow duration-300"
 				>
 					{/* <TitleCard /> */}
 					<div>
@@ -86,12 +68,12 @@ export default function Home() {
 					<Projects />
 					<div className="grid mx-2 md:mx-auto">
 						<div>
-							<h1
+							<h2
 								id="team"
 								className="font-bold sm:text-2xl text-4xl md:text-6xl font-arial text-white p-4"
 							>
 								Our Team
-							</h1>
+							</h2>
 						</div>
 						{teamMembers.map((member, index) => (
 							<TeamCard

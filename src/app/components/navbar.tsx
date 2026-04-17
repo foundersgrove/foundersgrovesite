@@ -14,7 +14,7 @@ export default function NavBar({}) {
 					</div>
 				</div>
 			</nav> */}
-			<div className="navbar absolute top-0 left-0 w-full z-50 bg-foreground/20 backdrop-blur-lg shadow-xl">
+			<div className="navbar fixed top-0 left-0 w-full z-50 bg-foreground/20 backdrop-blur-lg shadow-xl">
 				<div className="navbar-start flex-1">
 					<a
 						className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-2 transition-colors min-w-0"
@@ -37,6 +37,7 @@ export default function NavBar({}) {
 						<div
 							tabIndex={0}
 							role="button"
+							aria-label="Open navigation menu"
 							className="btn btn-ghost md:hidden text-background hover:bg-white/10"
 						>
 							<svg
