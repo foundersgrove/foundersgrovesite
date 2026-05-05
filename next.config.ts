@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 2592000,
   },
+  transpilePackages: ['three'],
   async headers() {
     return [
       {

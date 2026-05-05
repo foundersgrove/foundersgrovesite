@@ -1,7 +1,9 @@
+import Scene from "./Scene";
+
 export default function PreviewCanvas() {
 	return (
-		<div>
-			Canvas
+		<div className="h-screen w-full">
+			<Scene />
 		</div>
 	);
 }
