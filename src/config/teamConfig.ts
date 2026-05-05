@@ -24,12 +24,12 @@ export const teamMembers: TeamMember[] = [
     gitLink: "https://github.com/sammcdonald-dev",
     linkedIn: "https://www.linkedin.com/in/sam-mcdonald-42b2761a3/"
   },
-  {
-    name: "Jordan Rhodes",
-    bio: "Full-stack application developer and entrepreneur. Tampa, FL.",
-    img: "/imgs/jordan.png",
-    title: "Entrepreneur | Engineer | Sales",
-    gitLink: "https://github.com/jsrhodes15",
-    linkedIn: "https://www.linkedin.com/in/jsrhodes15/"
-  }
-]; 
+  // {
+  //   name: "Jordan Rhodes",
+  //   bio: "Full-stack application developer and entrepreneur. Tampa, FL.",
+  //   img: "/imgs/jordan.png",
+  //   title: "Entrepreneur | Engineer | Sales",
+  //   gitLink: "https://github.com/jsrhodes15",
+  //   linkedIn: "https://www.linkedin.com/in/jsrhodes15/"
+  // }
+];
