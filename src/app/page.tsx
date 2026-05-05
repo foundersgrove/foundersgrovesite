@@ -3,15 +3,17 @@ import TeamCard from "./components/teamCard";
 import ContactButton from "./components/ContactButton";
 import TypewriterStarter from "./components/TypewriterStarter";
 import { teamMembers } from "../config/teamConfig";
+import SiteBackground from "./components/SiteBackground";
 
 export default function Home() {
 	return (
-		<div>
+    <div>
+      <SiteBackground />
 			<TypewriterStarter />
 			{/* Main Content */}
 			<div className="relative z-10 flex-grow px-4 md:px-8">
 				<div
-					className="gap-8 md:gap-16 mt-24 md:mt-36 max-w-4xl mx-auto flex flex-col font-arial text-background bg-foreground/20 
+					className="gap-8 md:gap-16 mt-24 md:mt-36 max-w-4xl mx-auto flex flex-col font-arial text-background bg-foreground/20
 					rounded-xl p-8 md:p-16 backdrop-filter backdrop-blur-lg shadow-lg shadow-black/50 hover:shadow-black
 					transition-shadow duration-300"
 				>

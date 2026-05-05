@@ -61,28 +61,16 @@ export default function RootLayout({
 			<body className="antialiased">
 				<div className="relative flex flex-col w-full">
 					{/* Background Image */}
-					<div className="back">
-						<Image
-							src="/imgs/RedwoodBackground.jpg"
-							alt="Redwood Background"
-							fill
-							priority
-							sizes="100vw"
-							className="object-cover object-center"
-							quality={75}
-						/>
-						<div className="absolute inset-0 bg-black/20 z-50" />
-					</div>
-						<NavBar />
+					{/* replaced with component in route */}
+					<NavBar />
 						{children}
-						<Footer />
+					<Footer />
 				</div>
-				<Script
-					src="/analytics.js"
-					data-website-id="2604fdad-e02c-478d-a665-4aa6bdae2618"
-					strategy="lazyOnload"
-				/>
-
+  				<Script
+  					src="/analytics.js"
+  					data-website-id="2604fdad-e02c-478d-a665-4aa6bdae2618"
+  					strategy="lazyOnload"
+  				/>
 			</body>
 		</html>
 	);
