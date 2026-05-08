@@ -4,7 +4,6 @@ import "./globals.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/globalFooter";
 import Script from "next/script";
-import Image from "next/image";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -60,17 +59,21 @@ export default function RootLayout({
 		>
 			<body className="antialiased">
 				<div className="relative flex flex-col w-full">
-					{/* Background Image */}
-					{/* replaced with component in route */}
+					{/*
+					  The redwood photo background was extracted into <SiteBackground />
+					  so that individual pages can opt in or out. Pages that want the
+					  classic look render it themselves (see app/page.tsx). The /preview
+					  route renders a 3D canvas instead.
+					*/}
 					<NavBar />
-						{children}
+					{children}
 					<Footer />
 				</div>
-  				<Script
-  					src="/analytics.js"
-  					data-website-id="2604fdad-e02c-478d-a665-4aa6bdae2618"
-  					strategy="lazyOnload"
-  				/>
+				<Script
+					src="/analytics.js"
+					data-website-id="2604fdad-e02c-478d-a665-4aa6bdae2618"
+					strategy="lazyOnload"
+				/>
 			</body>
 		</html>
 	);
