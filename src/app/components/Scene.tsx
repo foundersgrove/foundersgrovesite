@@ -44,13 +44,12 @@ export default function Scene() {
 		>
 			<SceneEnvironment />
 			<CameraRig />
-
-			<ambientLight intensity={0.25} color="#506d4f" />
 			<directionalLight
 				position={[0, 8, -28]}
 				intensity={2.2}
 				color="#a6e2a3"
-			/>
+      />
+			<ambientLight intensity={0.25} color="#506d4f" />
 
 			{/* Ground plane — gives the eye something to track during scroll */}
 			<mesh rotation-x={-Math.PI / 2} position={[0, 0, -10]}>
@@ -60,7 +59,7 @@ export default function Scene() {
 
 			{/* Phase 0 reference cube — replace in Phase 1 */}
 			<mesh position={[0, 1, -12]}>
-				<boxGeometry args={[1, 2, 1]} />
+				<boxGeometry args={[1, 0, 1]} />
 				<meshStandardMaterial color="#739E71" />
 			</mesh>
 		</Canvas>
