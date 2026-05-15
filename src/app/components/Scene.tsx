@@ -49,7 +49,13 @@ export default function Scene() {
 				intensity={2.2}
 				color="#a6e2a3"
       />
-			<ambientLight intensity={0.25} color="#506d4f" />
+      <directionalLight
+        castShadow
+        position={[10, 8, 0]}
+        intensity={4}
+        color="#a6e2a3"
+      />
+			<ambientLight intensity={0.45} color="#506d4f" />
 
 			{/* Ground plane — gives the eye something to track during scroll */}
 			<mesh rotation-x={-Math.PI / 2} position={[0, 0, -10]}>
@@ -58,8 +64,8 @@ export default function Scene() {
 			</mesh>
 
 			{/* Phase 0 reference cube — replace in Phase 1 */}
-			<mesh position={[0, 1, -12]}>
-				<boxGeometry args={[1, 0, 1]} />
+      <mesh rotation-x={10} position={[0, 1, -12]}>
+				<boxGeometry args={[1, 1, 2]} />
 				<meshStandardMaterial color="#739E71" />
 			</mesh>
 		</Canvas>
